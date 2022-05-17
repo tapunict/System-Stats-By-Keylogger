@@ -15,6 +15,11 @@ It has been developed in C++ and uses Windows APIs. <br/>
 It sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity. <br/>
 The log has the following pattern:
 
+```
+[Window Name] :: (Timestamp)
+Text logged...
+```
+
 ![log_pattern](/docs/images/log_pattern.jpg)
 
 ### Server System
