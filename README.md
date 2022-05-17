@@ -19,8 +19,14 @@ The log has the following pattern:
 [Window Name] :: (Timestamp)
 Text logged...
 ```
+For instance
+```
+[Untitled - Notepad] :: (2022-01-01 12:30:00)
+Hello Woo[BACKSPACE]rld!
 
-![log_pattern](/docs/images/log_pattern.jpg)
+[Calculator] :: (2022-01-01 12:45:00)
+50+50[ENTER]/4[ENTER]
+```
 
 ### Server System
 
