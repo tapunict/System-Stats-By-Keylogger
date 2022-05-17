@@ -20,6 +20,7 @@ There is a socket which receives the log and passes it to the pipeline described
 
 ![pipeline](/images/pipeline.jpg)
 
+The purpose of the project is to make stats on the use of the system by the user.
 Specifically, the following functions are available:
 * aaa
 * bbb
@@ -32,7 +33,7 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Data Storage via ElasticSearch
 * Knowledge of Data Visualization via Kibana
 * Knowledge of Jupyter Notebook (for the presentation)
-* Good coding skills (legible, reliable, etc.) 
+* Good coding skills (legible, reliable, etc.) :computer:
 
 ## Demo
 
