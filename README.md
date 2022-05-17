@@ -14,6 +14,8 @@ The data source is a Windows Keylogger (written and used just on my computer for
 It has been developed in C++ and uses Windows APIs.<br/>
 It sends a log to the server on each foreground window change, which receives the log and passes it to the pipeline described above and illustrated below.
 
+![pipeline](/images/pipeline.jpg)
+
 Specifically, the following functions are available:
 * aaa
 * bbb
@@ -29,8 +31,6 @@ Additionally, this project was created as an exam project, to test and practice 
 * Good coding skills (legible, reliable, etc.) 
 
 ## Structure
-
-![pipeline](/images/pipeline.jpg)
 
 Element | Utility
 ----- | -------
