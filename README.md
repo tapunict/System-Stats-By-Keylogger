@@ -26,12 +26,12 @@ Specifically, the following functions are available:
 
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
-* Knowledge of Data Ingestion and Logstash
-* Knowledge of Data Streaming and Kafka
-* Knowledge of Data Processing and Spark 
-* Knowledge of Data Storage and ElasticSearch
-* Knowledge of Data Visualization and Kibana
-* Knowledge of Jupyter Notebook
+* Knowledge of Data Ingestion via Logstash
+* Knowledge of Data Streaming via Kafka
+* Knowledge of Data Processing via Spark 
+* Knowledge of Data Storage via ElasticSearch
+* Knowledge of Data Visualization via Kibana
+* Knowledge of Jupyter Notebook (for the presentation)
 * Good coding skills (legible, reliable, etc.) 
 
 ## Demo
@@ -44,17 +44,11 @@ Element | Utility
 ----- | -------
 /folder1/ | description....
 
-## Requirements
-
-To modify and run this simulator, you need to install:
-* Docker
-* Jupyter Notebook
-
 ## Getting Started
 
 So that the repository is successfully cloned and simulator run smoothly, a few steps need to be followed.
 
-### Prerequisites
+### Requisites
 
 * Need to have [AAA](https://www.test.com/).
 * Need to download and install [BBB](https://www.test2.it/).
