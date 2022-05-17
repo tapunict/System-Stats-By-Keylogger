@@ -11,14 +11,16 @@ The course aims to study and use technologies useful to build end-to-end solutio
 #### Data Source: Windows Keylogger
 
 The data source is a Windows Keylogger :warning: written and used just on my computer for academic purposes. <br/>
-It has been developed in C++ and uses Windows APIs.<br/>
-It sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity.
+It has been developed in C++ and uses Windows APIs. <br/>
+It sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity. <br/>
+The log has the following pattern:
+![log_pattern](/docs/images/log.jpg)
 
 #### Server System
 
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below.
 
-![pipeline](/images/pipeline.jpg)
+![pipeline](/docs/images/pipeline.jpg)
 
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
