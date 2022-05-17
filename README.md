@@ -12,7 +12,11 @@ The course aims to study and use technologies useful to build end-to-end solutio
 
 The data source is a Windows Keylogger (written and used just on my computer for academic purposes). <br/>
 It has been developed in C++ and uses Windows APIs.<br/>
-It sends a log to the server on each foreground window change, which receives the log and passes it to the pipeline described above and illustrated below.
+It sends a log to the server on each foreground window change.
+
+#### Server System
+
+There is a socket which receives the log and passes it to the pipeline described above and illustrated below.
 
 ![pipeline](/images/pipeline.jpg)
 
@@ -29,6 +33,10 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Data Visualization and Kibana
 * Knowledge of Jupyter Notebook
 * Good coding skills (legible, reliable, etc.) 
+
+## Demo
+
+...
 
 ## Structure
 
