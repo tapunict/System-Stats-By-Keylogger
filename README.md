@@ -8,9 +8,11 @@ _Dept of Math and Computer Science, University of Catania_
 
 The course aims to study and use technologies useful to build end-to-end solutions to analyze, manage, store, process, and visualize data acquired in real-time. For instance, we have seen: Docker containers, and pipelines built with Logstash (for data ingestion), Kafka (for data streaming), Spark (for data processing), ElasticSearch (for data storing), and Kibana (for data visualization). 
 
-In this project, I want to apply what I have studied. The data source is a Windows Keylogger (written and used just on my computer for academic purposes) which sends a log each **K** seconds to the server, which receives the log and passes it to the pipeline described above and illustrated below.
+##### Data Source: Windows Keylogger
 
-![pipeline](/images/pipeline.jpg)
+The data source is a Windows Keylogger (written and used just on my computer for academic purposes). <br/>
+It has been developed in C++ and uses Windows APIs.<br/>
+It sends a log to the server on each foreground window change, which receives the log and passes it to the pipeline described above and illustrated below.
 
 Specifically, the following functions are available:
 * aaa
@@ -28,7 +30,9 @@ Additionally, this project was created as an exam project, to test and practice 
 
 ## Structure
 
-Class | Utility
+![pipeline](/images/pipeline.jpg)
+
+Element | Utility
 ----- | -------
 /folder1/ | description....
 
