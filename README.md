@@ -19,7 +19,7 @@ The log has the following pattern:
 
 #### Server System
 
-There is a socket which receives the log and passes it to the pipeline described above and illustrated below.
+There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 
 ![pipeline](/docs/images/pipeline.jpg)
 
