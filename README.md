@@ -12,7 +12,7 @@ The course aims to study and use technologies useful to build end-to-end solutio
 
 The data source is a Windows Keylogger :warning: written and used just on my computer for academic purposes. <br/>
 It has been developed in C++ and uses Windows APIs.<br/>
-It sends a log to the TCP server on each foreground window change OR after **K** seconds of user inactivity.
+It sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity.
 
 #### Server System
 
