@@ -48,11 +48,6 @@ Element | Utility
 
 To modify and run this simulator, you need to install:
 * Docker
-* Logstash
-* Kafka
-* Spark
-* ElasticSearch
-* Kibana
 * Jupyter Notebook
 
 ## Getting Started
