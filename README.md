@@ -47,7 +47,7 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Data Storage via ElasticSearch
 * Knowledge of Data Visualization via Kibana
 * Knowledge of Jupyter Notebook (for the presentation)
-* Good coding skills (legible, reliable, etc.) :computer:
+* Good coding skills (legible, reliable, documentation, etc.) :computer:
 
 ## Structure
 
