@@ -59,7 +59,7 @@ Element | Utility
 
 Lets see a step-by-step explanation integrated with some screenshots of the demo.
 
-### Logstash
+<img src="docs/logos/logstash-logo.png" height="150px" />
 ### Kafka
 ### Spark
 ### ElasticSearch
