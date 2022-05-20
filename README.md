@@ -57,7 +57,13 @@ Element | Utility
 
 ## Demo
 
-...
+Lets see a step-by-step explanation integrated with some screenshots of the demo.
+
+### Logstash
+### Kafka
+### Spark
+### ElasticSearch
+### Kibana
 
 ## Getting Started
 
