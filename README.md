@@ -53,23 +53,23 @@ Additionally, this project was created as an exam project, to test and practice 
 
 Lets see a step-by-step explanation integrated with some screenshots of the demo.
 
-<img src="docs/logos/logstash-logo.png" height="70px" />
+<img src="docs/logos/logstash-logo.png" height="60px" />
 
 Logstash is an open-source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.
 
-<img src="docs/logos/kafka-logo.png?v=1653055181" height="70px" />
+<img src="docs/logos/kafka-logo.png?v=1653055181" height="60px" />
 
 Kafka is a distributed data streaming platform that can handle and process streams of records in real-time. It is designed to handle data streams from multiple sources and deliver them to numerous consumers.
 
-<img src="docs/logos/elasticsearch-logo.png" height="70px" />
+<img src="docs/logos/elasticsearch-logo.png" height="60px" />
 
 Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the free and open Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.
 
-<img src="docs/logos/spark-logo.png" height="70px" />
+<img src="docs/logos/spark-logo.png" height="60px" />
 
 Spark is a unified analytics engine for large-scale data processing in real-time.
 
-<img src="docs/logos/kibana-logo.png?v=1653055181" height="70px" />
+<img src="docs/logos/kibana-logo.png?v=1653055181" height="60px" />
 
 Kibana is a free and open front-end application that sits on top of the Elastic Stack, providing search and data visualization capabilities for data indexed in ElasticSearch. Commonly known as the charting tool for the Elastic Stack, Kibana also acts as the user interface for monitoring and managing.
 
