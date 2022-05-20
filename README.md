@@ -17,7 +17,7 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 The log has the following pattern:
 ```
 [Window Name] :: (Timestamp)
-Text logged...
+...Text logged...
 ```
 For instance:
 ```
@@ -32,7 +32,7 @@ Hello Wot[BACKSPACE]rld!
 
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 
-![pipeline](/docs/images/pipeline.jpg)
+![pipeline](/docs/imgs/pipeline.png)
 
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
@@ -74,6 +74,8 @@ Kafka is a distributed data streaming platform that can handle and process strea
 Spark is a unified analytics engine for large-scale data processing in real-time.
 
 <img src="docs/logos/kibana-logo.png" height="70px" />
+
+Kibana is a free and open front-end application that sits on top of the Elastic Stack, providing search and data visualization capabilities for data indexed in Elasticsearch. Commonly known as the charting tool for the Elastic Stack, Kibana also acts as the user interface for monitoring, managing, and securing an Elastic Stack cluster.
 
 ## Getting Started
 
