@@ -69,6 +69,8 @@ Kafka is a distributed data streaming platform that can handle and process strea
 
 <img src="docs/logos/elasticsearch-logo.png" height="70px" />
 
+Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the free and open Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.
+
 <img src="docs/logos/spark-logo.png" height="70px" />
 
 Spark is a unified analytics engine for large-scale data processing in real-time.
