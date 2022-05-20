@@ -59,11 +59,15 @@ Element | Utility
 
 Lets see a step-by-step explanation integrated with some screenshots of the demo.
 
-<img src="docs/logos/logstash-logo.png" height="75px" />
-### Kafka
-### Spark
-### ElasticSearch
-### Kibana
+<img src="docs/logos/logstash-logo.png" height="70px" />
+
+<img src="docs/logos/kafka-logo.png" height="70px" />
+
+<img src="docs/logos/elasticsearch-logo.png" height="70px" />
+
+<img src="docs/logos/spark-logo.png" height="70px" />
+
+<img src="docs/logos/kibana-logo.png" height="70px" />
 
 ## Getting Started
 
