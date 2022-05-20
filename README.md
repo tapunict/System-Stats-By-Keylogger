@@ -75,7 +75,7 @@ Spark is a unified analytics engine for large-scale data processing in real-time
 
 <img src="docs/logos/kibana-logo.png" height="70px" />
 
-Kibana is a free and open front-end application that sits on top of the Elastic Stack, providing search and data visualization capabilities for data indexed in Elasticsearch. Commonly known as the charting tool for the Elastic Stack, Kibana also acts as the user interface for monitoring, managing, and securing an Elastic Stack cluster.
+Kibana is a free and open front-end application that sits on top of the Elastic Stack, providing search and data visualization capabilities for data indexed in ElasticSearch. Commonly known as the charting tool for the Elastic Stack, Kibana also acts as the user interface for monitoring and managing.
 
 ## Getting Started
 
