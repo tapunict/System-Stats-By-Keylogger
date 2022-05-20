@@ -22,7 +22,7 @@ Text logged...
 For instance:
 ```
 [Untitled - Notepad] :: (2022-01-01 12:30:00)
-Hello Woo[BACKSPACE]rld!
+Hello Wot[BACKSPACE]rld!
 
 [Calculator] :: (2022-01-01 12:45:00)
 50+50[ENTER]/4[ENTER]
@@ -65,15 +65,23 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 ### Requisites
 
-* Need to have [AAA](https://www.test.com/).
-* Need to download and install [BBB](https://www.test2.it/).
+* Need to download and install [Docker](https://docs.docker.com/get-docker/).
+* The use of [Docker Desktop](https://www.docker.com/products/docker-desktop/) is recommended.
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is recommended.
 
-### Installation
+### Installation and Use
 
 1. Clone the repository 
 ```sh
    git clone https://github.com/ElephanZ/System-Stats-By-Keylogger.git
+``` 
+2. Go into the repository project
+```sh
+   cd yourPath/System-Stats-By-Keylogger/
+``` 
+3. Run the project
+```sh
+   bash run.sh 
 ``` 
 
 ## License
