@@ -49,15 +49,15 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Jupyter Notebook (for the presentation)
 * Good coding skills (legible, reliable, etc.) :computer:
 
-## Demo
-
-...
-
 ## Structure
 
 Element | Utility
 ----- | -------
-/folder1/ | description....
+/folder1/ | description...
+
+## Demo
+
+...
 
 ## Getting Started
 
