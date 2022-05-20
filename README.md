@@ -61,6 +61,8 @@ Lets see a step-by-step explanation integrated with some screenshots of the demo
 
 <img src="docs/logos/logstash-logo.png" height="70px" />
 
+Logstash is an open-source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.
+
 <img src="docs/logos/kafka-logo.png" height="70px" />
 
 <img src="docs/logos/elasticsearch-logo.png" height="70px" />
