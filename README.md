@@ -24,7 +24,7 @@ For instance:
 [Untitled - Notepad] :: (2022-01-01 12:30:00)
 Hello Wot[BACKSPACE]rld!
 
-[Calculator] :: (2022-01-01 12:45:00)
+[Calculator] :: (2022-01-01 12:32:46)
 50+50[ENTER]/4[ENTER]
 ```
 
