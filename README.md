@@ -65,9 +65,13 @@ Logstash is an open-source data collection engine with real-time pipelining capa
 
 <img src="docs/logos/kafka-logo.png" height="70px" />
 
+Kafka is a distributed data streaming platform that can handle and process streams of records in real-time. It is designed to handle data streams from multiple sources and deliver them to numerous consumers.
+
 <img src="docs/logos/elasticsearch-logo.png" height="70px" />
 
 <img src="docs/logos/spark-logo.png" height="70px" />
+
+Spark is a unified analytics engine for large-scale data processing in real-time.
 
 <img src="docs/logos/kibana-logo.png" height="70px" />
 
