@@ -32,7 +32,7 @@ Hello Wot[BACKSPACE]rld!
 
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 
-<img src="docs/imgs/pipeline.png" height="100px" style="border-radius:10px"/>
+<img src="docs/imgs/pipeline.png" height="300px" style="border-radius:20px"/>
 
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
