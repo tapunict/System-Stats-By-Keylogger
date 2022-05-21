@@ -53,7 +53,7 @@ Additionally, this project was created as an exam project, to test and practice 
 
 Lets see a step-by-step explanation integrated with some screenshots of the demo.
 
-<img src="docs/logos/docker-logo.png?v=1653175036" height="60px" />
+<img src="docs/logos/docker-logo.png?v=1653175210" height="60px" />
 
 Each of the following components of the Elastic Stack has been put inside a Docker Container.
 
