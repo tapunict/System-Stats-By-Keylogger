@@ -55,7 +55,7 @@ Lets see a step-by-step explanation integrated with some screenshots of the demo
 
 <img src="docs/logos/docker-logo.png" height="60px" />
 
-Each of the following components has been put inside a Docker Container.
+Each of the following components of the Elastic Stack has been put inside a Docker Container.
 
 <img src="docs/logos/logstash-logo.png" height="60px" />
 
