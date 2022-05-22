@@ -48,7 +48,7 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Jupyter Notebook (for the presentation)
 * Good coding skills (legible, reliable, documentation, etc.) :computer:
 
-## Structure and Demo
+## Structure
 
 Component | Utility
 ----- | -------
