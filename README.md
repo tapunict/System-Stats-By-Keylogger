@@ -51,7 +51,8 @@ Additionally, this project was created as an exam project, to test and practice 
 ## Structure
 
 <img src="docs/logos/docker-logo.png?v=1653175210" width="150px" />
-Each of the following components has been put inside a **Docker** Container.
+
+Each of the following components has been put inside a **Docker** Container. <br/>
 
 Component | Utility
 ----- | -------
