@@ -80,7 +80,7 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 ``` 
 3. Run the project
 ```sh
-   bash run.sh 
+   ./run.sh 
 ``` 
 
 ## License
