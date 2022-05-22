@@ -75,17 +75,10 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 ### Installation and Use
 
-1. Clone the repository 
 ```sh
-   git clone https://github.com/ElephanZ/System-Stats-By-Keylogger.git
-``` 
-2. Go into the repository project
-```sh
-   cd yourPath/System-Stats-By-Keylogger/
-``` 
-3. Run the project
-```sh
-   ./run.sh 
+   $ git clone https://github.com/ElephanZ/System-Stats-By-Keylogger.git
+   $ cd yourPath/System-Stats-By-Keylogger/
+   $ ./run.sh
 ``` 
 
 ## License
