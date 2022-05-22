@@ -50,9 +50,11 @@ Additionally, this project was created as an exam project, to test and practice 
 
 ## Structure
 
+<img src="docs/logos/docker-logo.png?v=1653175210" width="150px" />
+Each of the following components has been put inside a **Docker** Container.
+
 Component | Utility
 ----- | -------
-<img src="docs/logos/docker-logo.png?v=1653175210" width="150px" /> | Each of the following components of the ELK Stack has been put inside a **Docker** Container.
 <img src="docs/logos/logstash-logo.png" width="150px" /> | **Logstash** is an open-source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.<br/> I used it to...
 <img src="docs/logos/kafka-logo.png?v=1653055181" width="150px" /> | **Kafka** is a distributed data streaming platform that can handle and process streams of records in real-time. It is designed to handle data streams from multiple sources and deliver them to numerous consumers.<br/> I used it to...
 <img src="docs/logos/elasticsearch-logo.png" width="150px" /> | **Elasticsearch** is a search engine, and is the heart of the ELK Stack. It centrally stores data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.<br/> I used it to...
