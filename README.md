@@ -83,7 +83,6 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 ### Requisites
 
 * Need to download and install [Docker](https://docs.docker.com/get-docker/).
-* The use of [Docker Desktop](https://www.docker.com/products/docker-desktop/) is recommended.
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is recommended.
 
 ### Installation and Use
