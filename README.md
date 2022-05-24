@@ -42,7 +42,7 @@ Hello Wot[BACKSPACE]rld!
 ### Server System
 
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
-<p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="450px"/> </p>
+<p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
