@@ -24,12 +24,18 @@ For instance:
 ```
 [752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Untitled - Notepad] :: [2022-01-01 12:30:00]
 Hello Wot[BACKSPACE]rld!
-[2022-01-01 12:31:30]
+[2022-01-01 12:31:37]
 
 [752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Calculator] :: [2022-01-01 12:32:46]
 50+50[ENTER]/4[ENTER]
 [2022-01-01 12:33:00]
 ```
+
+Each log is composed by:
+- **GUID**: it identifies the PC
+- **Window Name**: the title of the window where the user has typed
+- **Timestamp**: they are two. Respectively, the timestamp of when the user started typing, and the timestamp of when the user finished typing in that window
+- **Text logged**: it is the set of keys pressed by the user and logged by the keylogger
 
 ### Server System
 
