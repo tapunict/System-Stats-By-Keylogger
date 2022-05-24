@@ -86,6 +86,7 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 ### Requisites
 
+* Linux / MacOS / Windows WSL.
 * Need to download and install [Docker](https://docs.docker.com/get-docker/).
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is recommended.
 
@@ -97,6 +98,14 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
    $ ./run.sh
 ``` 
 
+## Useful Links
+
+Container | URL | Description
+----- | ------- | -------
+logstash | http://localhost:5000 | Something
+
 ## License
+
+**Author**: [Antonio Scardace](https://antonioscardace.altervista.org/)
 
 Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information. :copyright:
