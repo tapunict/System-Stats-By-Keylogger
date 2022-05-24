@@ -16,9 +16,9 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 
 The log has the following pattern:
 ```
-[GUID] :: [Window Title] :: [Timestamp]
+[GUID] :: [Window Title] :: [Timestamp Start]
 ...Text logged...
-[Timestamp]
+[Timestamp End]
 ```
 For instance:
 ```
@@ -35,7 +35,8 @@ Each log is composed by:
 - **GUID**: Identifies the PC univocally.
 - **Window Title**: Is the title of the window where the user has typed.
 - **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
-- **Timestamp**: There are two: the first timestamp indicates when the user started typing, and the second timestamp indicates when the user finished typing in that window.
+- **Timestamp Start**: Indicates when the user started typing in that window.
+- **Timestamp End**: Indicates when the user finished typing in that window.
 
 ### Server System
 
