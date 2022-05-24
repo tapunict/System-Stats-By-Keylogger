@@ -48,10 +48,10 @@ The purpose of the project is to make stats on the use of the system by the user
 Specifically, the following functions are available:
 - For Text Analysis:
     + Frequency statistics about pressed keys :chart_with_upwards_trend:
-    + Sentiment analysis :eyes:
+    + Sentiment analysis :sparkles:
 - For Windows and Timestamps:
-    + Type of window classification (social, game, utility, others) :sparkles:
-    + How much time the user spends on each category of windows :clock9:
+    + Type of window classification (social, game, utility, others) :iphone:
+    + How much time the user spends on each category of windows :eyes:
     + How much time the user spends writing to the PC :clock9:
 
 Additionally, this project was created as an exam project, to test and practice the following skills:
