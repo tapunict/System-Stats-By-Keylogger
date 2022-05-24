@@ -21,10 +21,10 @@ The log has the following pattern:
 ```
 For instance:
 ```
-[7038c1ac-cd01-4fb3-982c-36aa0f2adfe8] :: [Untitled - Notepad] :: (2022-01-01 12:30:00)
+[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Untitled - Notepad] :: (2022-01-01 12:30:00)
 Hello Wot[BACKSPACE]rld!
 
-[7038c1ac-cd01-4fb3-982c-36aa0f2adfe8] :: [Calculator] :: (2022-01-01 12:32:46)
+[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Calculator] :: (2022-01-01 12:32:46)
 50+50[ENTER]/4[ENTER]
 ```
 
