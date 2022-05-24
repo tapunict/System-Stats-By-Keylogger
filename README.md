@@ -16,16 +16,19 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 
 The log has the following pattern:
 ```
-[GUID] :: [Window Name] :: (Timestamp)
+[GUID] :: [Window Name] :: [Timestamp]
 ...Text logged...
+[Timestamp]
 ```
 For instance:
 ```
-[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Untitled - Notepad] :: (2022-01-01 12:30:00)
+[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Untitled - Notepad] :: [2022-01-01 12:30:00]
 Hello Wot[BACKSPACE]rld!
+[2022-01-01 12:31:30]
 
-[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Calculator] :: (2022-01-01 12:32:46)
+[752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Calculator] :: [2022-01-01 12:32:46]
 50+50[ENTER]/4[ENTER]
+[2022-01-01 12:33:00]
 ```
 
 ### Server System
