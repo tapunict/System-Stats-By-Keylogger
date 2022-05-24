@@ -32,10 +32,10 @@ Hello Wot[BACKSPACE]rld!
 ```
 
 Each log is composed by:
-- **GUID**: it identifies the PC
-- **Window Name**: the title of the window where the user has typed
-- **Timestamp**: they are two. Respectively, the timestamp of when the user started typing, and the timestamp of when the user finished typing in that window
-- **Text logged**: it is the set of keys pressed by the user and logged by the keylogger
+- **GUID**: it identifies the PC.
+- **Window Name**: the title of the window where the user has typed.
+- **Text logged**: it is the set of keys pressed by the user and logged by the keylogger.
+- **Timestamp**: they are two. Respectively, the timestamp of when the user started typing, and the timestamp of when the user finished typing in that window.
 
 ### Server System
 
