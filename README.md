@@ -22,7 +22,7 @@ Text logged...
 ```
 
 Each log is composed by:
-- **GUID**: Identifies the PC univocally.
+- **GUID**: Identifies the PC univocally. Has the following format: 00000000-0000-0000-0000-000000000000.
 - **Window Title**: Is the title of the window where the user has typed.
 - **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
 - **Timestamp Start**: Indicates when the user started typing in that window.
@@ -30,12 +30,12 @@ Each log is composed by:
 
 For instance:
 ```
-[00000000-0000-0000-0000-000000000000] :: [Untitled - Notepad] :: [2022-01-01 12:30:00]
+[08E9C0E6-CF7D-43F7-922D-0D6E3B204F8A] :: [Untitled - Notepad] :: [2022-01-01 12:30:00]
 Hello Wot[BACKSPACE]rld!
 [2022-01-01 12:31:37]
 
-[00000000-0000-0000-0000-000000000000] :: [Calculator] :: [2022-01-01 12:32:46]
-50+50[ENTER]/4[ENTER]
+[08E9C0E6-CF7D-43F7-922D-0D6E3B204F8A] :: [Calculator] :: [2022-01-01 12:32:46]
+50+50[ENTER]/4
 [2022-01-01 12:33:00]
 ```
 
