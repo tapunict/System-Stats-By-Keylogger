@@ -106,5 +106,5 @@ logstash | http://localhost:5000 | Something
 
 ## License
 
-**Author**: [Antonio Scardace](https://antonioscardace.altervista.org/) <br/>
+**Author**: [Antonio Scardace](https://antonioscardace.altervista.org/). <br/>
 Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information. :copyright:
