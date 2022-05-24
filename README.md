@@ -36,8 +36,8 @@ There is a socket which receives the log and passes it to the pipeline described
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
 - For Text Analysis:
-    + Frequency statistics about pressed keys 
-    + Sentiment analysis
+    + Frequency statistics about pressed keys :chart_with_upwards_trend:
+    + Sentiment analysis :eyes:
 - For Windows and Time:
     + Type of window classification (social, game, utility, others)
     + How much time the user spends on each category of windows :clock9:
@@ -88,4 +88,4 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 ## License
 
-Distributed under the **GNU General Public License v3.0**. :copyright: See ``` LICENSE ``` for more information.
+Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information. :copyright:
