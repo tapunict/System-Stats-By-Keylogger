@@ -40,8 +40,8 @@ Specifically, the following functions are available:
     + Sentiment analysis :eyes:
 - For Windows and Timestamps:
     + Type of window classification (social, game, utility, others) :sparkles:
-    + How much time the users spend on each category of windows :clock9:
-    + How much time the users spend writing to the PC :clock9:
+    + How much time the user spends on each category of windows :clock9:
+    + How much time the user spends writing to the PC :clock9:
 
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
