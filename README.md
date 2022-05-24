@@ -40,8 +40,8 @@ Specifically, the following functions are available:
     + Sentiment analysis
 - For Windows and Time:
     + Type of window classification (social, game, utility, others)
-    + How much time the user spends on each category of windows
-    + How much time the user spends using the PC
+    + How much time the user spends on each category of windows :clock9:
+    + How much time the user spends writing to the PC :clock9:
 
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
@@ -88,4 +88,4 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 ## License
 
-Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information.
+Distributed under the **GNU General Public License v3.0**. :copyright: See ``` LICENSE ``` for more information.
