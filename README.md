@@ -39,7 +39,7 @@ Specifically, the following functions are available:
     + Frequency statistics about pressed keys :chart_with_upwards_trend:
     + Sentiment analysis :eyes:
 - For Windows and Time:
-    + Type of window classification (social, game, utility, others)
+    + Type of window classification (social, game, utility, others) :sparkles:
     + How much time the user spends on each category of windows :clock9:
     + How much time the user spends writing to the PC :clock9:
 
