@@ -36,13 +36,13 @@ There is a socket which receives the log and passes it to the pipeline described
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
 * For Text Analysis:
-   1. Frequency statistics about pressed keys 
-   2. Sentiment analysis
+    1. Frequency statistics about pressed keys 
+    2. Sentiment analysis
 * For Windows and Time:
-   1. Type of window classification (social, game, utility, others)
-   2. Some statistics about usage:
-      - How much time the user spends on each category of windows
-      - How much time the user spends using the PC
+    1. Type of window classification (social, game, utility, others)
+    2. Some statistics about usage:
+       - How much time the user spends on each category of windows
+       - How much time the user spends using the PC
 
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
