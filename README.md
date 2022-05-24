@@ -102,7 +102,7 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 
 Container | URL | Description
 ----- | ------- | -------
-logstash | http://localhost:5000 | Something
+Lorem ipsum | http://localhost:5000 | Lorem ipsum
 
 ## License
 
