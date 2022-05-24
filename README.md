@@ -17,7 +17,7 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 The log has the following pattern:
 ```
 [GUID] :: [Window Title] :: [Timestamp Start]
-...Text logged...
+Text logged...
 [Timestamp End]
 ```
 
