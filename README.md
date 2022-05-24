@@ -20,6 +20,14 @@ The log has the following pattern:
 ...Text logged...
 [Timestamp End]
 ```
+
+Each log is composed by:
+- **GUID**: Identifies the PC univocally.
+- **Window Title**: Is the title of the window where the user has typed.
+- **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
+- **Timestamp Start**: Indicates when the user started typing in that window.
+- **Timestamp End**: Indicates when the user finished typing in that window.
+
 For instance:
 ```
 [752D7A7B-932E-4DD8-AEF9-93E9C7EAEBD2] :: [Untitled - Notepad] :: [2022-01-01 12:30:00]
@@ -30,13 +38,6 @@ Hello Wot[BACKSPACE]rld!
 50+50[ENTER]/4[ENTER]
 [2022-01-01 12:33:00]
 ```
-
-Each log is composed by:
-- **GUID**: Identifies the PC univocally.
-- **Window Title**: Is the title of the window where the user has typed.
-- **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
-- **Timestamp Start**: Indicates when the user started typing in that window.
-- **Timestamp End**: Indicates when the user finished typing in that window.
 
 ### Server System
 
