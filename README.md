@@ -24,8 +24,8 @@ Text logged...
 Each log is composed by:
 - **GUID**: Identifies the PC univocally. Has the following format: 00000000-0000-0000-0000-000000000000.
 - **Window Title**: Is the title of the window where the user has typed.
-- **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
 - **Timestamp Start**: Indicates when the user started typing in that window.
+- **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
 - **Timestamp End**: Indicates when the user finished typing in that window.
 
 For instance:
