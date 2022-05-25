@@ -42,7 +42,7 @@ There is a socket which receives the log and passes it to the pipeline described
 
 The purpose of the project is to make stats on the use of the system by the user. <br/>
 Specifically, the following functions are available:
-- For Text Analysis:
+- For the Text Log:
     + Sentiment analysis (NLP) :chart_with_upwards_trend:
 - For Windows and Timestamps:
     + Type of window classification (social, game, utility, others) :iphone:
