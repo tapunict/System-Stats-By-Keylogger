@@ -16,13 +16,13 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 
 The log has the following pattern:
 ```
-[GUID] :: [Window Title] :: [Timestamp Start]
+[UUID] :: [Window Title] :: [Timestamp Start]
 Text logged...
 [Timestamp End]
 ```
 
 Each log is composed by:
-- **GUID**: Identifies the PC univocally. Has the following format: 00000000-0000-0000-0000-000000000000.
+- **UUID**: Identifies the PC univocally. Has the following format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.
 - **Window Title**: Is the title of the window where the user has typed.
 - **Timestamp Start**: Indicates when the user started typing in that window.
 - **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
@@ -30,7 +30,7 @@ Each log is composed by:
 
 For instance:
 ```
-[F99B44F4-C2A5-45CF-9528-12F45E660279] :: [Calculator] :: [2022-01-01 12:32:46]
+[00000000-0000-0000-0000-000000000000] :: [Calculator] :: [2022-01-01 12:32:37]
 50+50[ENTER]/4[ENTER]-0.456[ENTER]
 [2022-01-01 12:33:05]
 ```
