@@ -103,5 +103,7 @@ Lorem ipsum | http://localhost:5000 | Lorem ipsum
 ## License
 
 **Author**: [Antonio Scardace](https://antonioscardace.altervista.org/). <br/>
-Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information. :copyright: <br/>
-PLEASE USE AND READ IT FOR ACADEMIC PURPOSES ONLY. I ABSTRACT ANY LIABILITY FOR ILLICIT USES :bangbang:
+Distributed under the **GNU General Public License v3.0**. See ``` LICENSE ``` for more information. :copyright: 
+
+PLEASE USE AND READ IT FOR ACADEMIC PURPOSES ONLY. :bangbang: <br/>
+I ABSTRACT ANY LIABILITY FOR ILLICIT AN USE. :bangbang:
