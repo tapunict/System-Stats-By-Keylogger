@@ -1,10 +1,10 @@
-#include "config.h"
+#include "config.hpp"
 
-#include "client.h"
-#include "info.h"
-#include "hook.h"
-#include "waiter.h"
-#include "register.h"
+#include "client.hpp"
+#include "info.hpp"
+#include "hook.hpp"
+#include "waiter.hpp"
+#include "register.hpp"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd) {
     ifstream conf("config.conf");
