@@ -95,7 +95,7 @@ So that the repository is successfully cloned and simulator run smoothly, a few 
 ```sh
    $ git clone https://github.com/ElephanZ/System-Stats-By-Keylogger.git
    $ cd yourPath/System-Stats-By-Keylogger/
-   $ ./run.sh
+   $ bash run.sh
 ``` 
 
 ### Useful Links
