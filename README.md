@@ -82,7 +82,7 @@ Component | Utility
 
 ## Getting Started
 
-So that the repository is successfully cloned and simulator run smoothly, a few steps need to be followed.
+So that the repository is successfully cloned and project run smoothly, a few steps need to be followed.
 
 ### Requisites
 
