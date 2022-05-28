@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  #-----------------#
+  #  Server Python  #
+  #-----------------#
+
+  server-python:
+    image: python:3.8-alpine
+    container_name: server-python
+    working_dir: /usr/server/
+    ports:
+      - 8800:8800
+    volumes:
+      - $PWD/server-python/:/usr/server/
+      - csv-share:/usr/server/csv/
+    command: "python3 server.py"
+      
+  #-----------------#
+  #    Logstash     #
+  #-----------------#
+
+  #-----------------#
+  #      Kafka      #
+  #-----------------#
+
+  #-----------------#
+  #      Spark      #
+  #-----------------#
+
+  #-----------------#
+  #      Kibana     #
+  #-----------------#
+
+volumes:
+  csv-share:
