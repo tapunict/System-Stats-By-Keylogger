@@ -63,7 +63,7 @@ The following functions are available:
     + How much time the user spends on each category of windows :eyes:
     + How much time the user spends writing to the PC :clock9:
 
-## Structure
+## Structure and Demo
 
 Let's see the structure of the project and how I have used all the components:
 
