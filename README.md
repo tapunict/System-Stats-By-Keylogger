@@ -9,14 +9,6 @@ _Dept of Math and Computer Science, University of Catania_
 The course aims to study and use technologies useful to build end-to-end solutions to analyze, manage, store, process, and visualize data acquired in real-time. For instance, we have seen: Docker containers, and pipelines built with Logstash (for data ingestion), Kafka (for data streaming), Spark (for data processing), ElasticSearch (for data storing), and Kibana (for data visualization). 
 
 The purpose of the project is to make stats on the real-time use of the system by the user. <br/>
-Specifically, the following functions are available:
-- For the Text Log:
-    + Sentiment analysis (NLP) :chart_with_upwards_trend:
-- For Windows and Timestamps:
-    + Type of window classification (social, game, utility, others) :iphone:
-    + How much time the user spends on each category of windows :eyes:
-    + How much time the user spends writing to the PC :clock9:
-
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
 * Knowledge of Data Ingestion via Logstash
@@ -62,6 +54,14 @@ For instance:
 
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
+
+The following functions are available:
+- For the Text Log:
+    + Sentiment analysis (NLP) :chart_with_upwards_trend:
+- For Windows and Timestamps:
+    + Type of window classification (social, game, utility, others) :iphone:
+    + How much time the user spends on each category of windows :eyes:
+    + How much time the user spends writing to the PC :clock9:
 
 ## Structure
 
