@@ -21,6 +21,15 @@ services:
   #    Logstash     #
   #-----------------#
 
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.2.0
+    container_name: logstash
+    volumes:
+      - $PWD/logstash/pipeline/:/usr/share/logstash/pipeline/
+      - csv-share:/usr/app/logstash/csv/
+    environment:
+      - XPACK_MONITORING_ENABLED=false
+
   #-----------------#
   #      Kafka      #
   #-----------------#
