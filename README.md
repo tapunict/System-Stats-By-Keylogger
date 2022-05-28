@@ -90,7 +90,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 * Use of Linux, MacOS, or Windows WSL.
 * Need to download and install [Docker](https://docs.docker.com/get-docker/).
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is strongly recommended.
-* The use of [Jupyter Notebook](https://jupyter.org/install#jupyter-notebook) is recommended to see the presentation (also as VS Code extension).
+* The use of [Jupyter Notebook](https://jupyter.org/install#jupyter-notebook) (also as VS Code extension) is recommended to see the presentation.
 
 ### Installation and Use
 
