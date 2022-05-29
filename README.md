@@ -72,7 +72,7 @@ Let's see the structure of the project and how I have used all the components:
 Each of the following components used has been put inside a **Docker Container**. <br/>
 
 Component | Utility
------ | -------
+------ | -------
 <img src="docs/logos/python-logo.png" width="165px" /> | I have used it to implement a server that receives logs via TCP requests through the 8800 port. It extracts the features by the log, and saves them into two CSV files. <br/><br/> _metadata.csv_ = [UUID, Window Title, Timestamp of Begin, Timestamp of End] <br/> _log.csv_ = [UUID, Text Log]
 <img src="docs/logos/logstash-logo.png" width="165px" /> | **Logstash** is an open-source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.<br/><br/> I have used it to create two different data flow: one for the metadata and one for the text logs. Logstash takes this input data from two files, metadata.csv and log.csv - they have been shared with the server container via a Docker volume. <br/><br/><p align="center"> <img src="docs/screens/logstash.png"/> </p>
 <img src="docs/logos/kafka-logo.png?v=1653055181" width="165px" /> | **Apache Kafka** is a distributed data streaming platform that can handle and process streams of records in real-time. It is designed to handle data streams from multiple sources and deliver them to numerous consumers. It allows us to use **Kafka Streams**, which is a client library for building applications and microservices, where the input and output data are stored in an Apache Kafka cluster.<br/><br/> I used it to...
