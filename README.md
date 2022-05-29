@@ -103,7 +103,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 Container | URL | Description
 ----- | ------- | -------
-Lorem ipsum | http://localhost:5000 | Lorem ipsum
+kibana | http://localhost:5601 | Kibana basic URL
 
 ## License :copyright: 
 
