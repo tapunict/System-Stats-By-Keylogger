@@ -55,13 +55,13 @@ For instance:
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
-The following functions are available:
+The following functions are available for each user and for all users:
 - For the Text Log:
-    + Sentiment analysis (NLP) :chart_with_upwards_trend:
+    + Sentiment analysis :chart_with_upwards_trend:
 - For Windows and Timestamps:
     + Type of window classification (social, game, utility, others) :iphone:
-    + How much time the user spends on each category of windows :eyes:
-    + How much time the user spends writing to the PC :clock9:
+    + How much time is spent on each category of windows :eyes:
+    + How much time is spent writing to the PC :clock9:
 
 ## Structure and Demo
 
