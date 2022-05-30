@@ -8,7 +8,7 @@ _Dept of Math and Computer Science, University of Catania_
 
 The course aims to study and use technologies useful to build end-to-end solutions to analyze, manage, store, process, and visualize data acquired in real-time. For instance, we have seen: Docker containers, and pipelines built with Logstash (for data ingestion), Kafka (for data streaming), Spark (for data processing), ElasticSearch (for data storing), and Kibana (for data visualization). 
 
-The purpose of the project is to make stats on the real-time use of the system by the user. <br/>
+The aim of the project is to carry out stats on the real-time use of the system by the user (and by users in general). <br/>
 Additionally, this project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
 * Knowledge of Data Ingestion via Logstash
