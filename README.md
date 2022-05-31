@@ -59,7 +59,7 @@ The following functions are available for each user (personal stats) and for all
 - For the Text Log:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Windows and Timestamps:
-    + Type of window classification (social, game, utility, others) :iphone:
+    + Type of window classification (social, game, utility, others) :performing_arts:
     + How much time is spent on each category of windows :eyes:
     + How much time is spent writing to the PC :clock9:
 
