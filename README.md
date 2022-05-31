@@ -86,7 +86,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 ### Requisites
 
-* At least 10 GB of memory.
+* At least 10 GB of free space.
 * Use of Linux, MacOS, or Windows WSL.
 * Need to download and install [Docker](https://docs.docker.com/get-docker/) (but [Docker Desktop](https://www.docker.com/products/docker-desktop/) is optional).
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is strongly recommended.
