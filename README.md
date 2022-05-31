@@ -103,7 +103,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 Container | URL | Description
 ----- | ------- | -------
-kafka | http://localhost:8080 | Kafka-UI to monitor Kafka server
+broker | http://localhost:8080 | Kafka-UI to monitor Kafka clusters and Kafka topics
 elasticsearch | http://localhost:9200 | ElasticSearch basic URL
 kibana | http://localhost:5601 | Kibana basic URL
 
