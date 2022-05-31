@@ -55,7 +55,7 @@ For instance:
 There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
-The following functions are available for each user and for all users:
+The following functions are available for each user (personal stats) and for all users (general stats):
 - For the Text Log:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Windows and Timestamps:
