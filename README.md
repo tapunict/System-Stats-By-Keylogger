@@ -14,7 +14,7 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Data Ingestion via Logstash
 * Knowledge of Data Streaming via Kafka
 * Knowledge of Data Processing via Spark 
-* Knowledge of Data Storing via ElasticSearch
+* Knowledge of Data Storing and Indexing via Elasticsearch
 * Knowledge of Data Visualization via Kibana
 * Knowledge of Jupyter Notebook (for the presentation)
 * Good coding skills (legible, reliable, documented, etc.) :computer:
