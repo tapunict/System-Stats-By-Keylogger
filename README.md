@@ -52,7 +52,7 @@ For instance:
 
 ### Server System
 
-There is a socket which receives the log and passes it to the pipeline described above and illustrated below:
+There is a socket that receives logs (from multiple clients) and passes them to the pipeline described above and illustrated below:
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
 The following functions are available for each user (personal stats) and for all users (general stats):
