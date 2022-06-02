@@ -92,7 +92,7 @@ class Server:
         self.sock.bind((self.__host, self.__port))
         self.sock.listen(n)
 
-    def receive(self):
+    def listenAll(self):
         while True:
             (victim, address) = self.sock.accept()
             Thread(target=self.__createClientThread, args=(victim,)).start()
@@ -114,5 +114,5 @@ while True:
 
     break
 
-server.receive()
+server.listenAll()
 server.close()
