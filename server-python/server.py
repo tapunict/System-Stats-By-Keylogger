@@ -56,17 +56,18 @@ class ClientThread:
     def __consolePrint(self, new_log):
         print('\n')
         print(new_log, end='', flush=True)
-
-    def __processing(self, new_log):
+        
+    def __csvPrint(self, fts):
         output = CSV()
-        fts = ExtractFeatures(new_log)
-
         output.writeMetadata(fts.getUUID(), fts.getWindow(), fts.getTimestampBegin(), fts.getTimestampEnd())
         output.writeLog(fts.getUUID(), fts.getLogText())
-
-        del fts
         del output
+
+    def __processing(self, new_log):
+        features = ExtractFeatures(new_log)
+        self.__csvPrint(features)
         self.__consolePrint(new_log)
+        del features
     
     def run(self):
         try:
