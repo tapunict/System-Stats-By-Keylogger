@@ -35,7 +35,7 @@ class CSV:
         self.__write__('csv/metadata.csv', [uuid, window, timestampBegin, timestampEnd])
 
     def writeLog(self, uuid, log):
-        self.__write__('csv/log.csv', [uuid, log])
+        self.__write__('csv/logs.csv', [uuid, log])
 
 
 class ExtractFeatures:
