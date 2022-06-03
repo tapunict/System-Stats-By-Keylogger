@@ -58,7 +58,7 @@ It receives logs (from multiple clients) and passes them to the pipeline describ
 The following functions are available for each user (personal stats) and for all users (general stats):
 - For the Logged Text:
     + Sentiment analysis :chart_with_upwards_trend:
-- For Windows and Timestamps:
+- For Metadata (windows and timestamps):
     + Type of window classification (social, utility, others) :performing_arts:
     + How much time is spent on each category of windows :eyes:
     + How much time is spent writing to the PC :clock9:
