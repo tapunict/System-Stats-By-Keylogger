@@ -67,7 +67,7 @@ The following functions are available for each user (personal stats) and for all
 
 Let's see the structure of the project and how I have used all the components:
 
-<table><tr><td>Each of the following components used has been put inside a <b>Docker Container</b>.</td><td><img src="docs/logos/docker-logo.png?v=1653175210" width="130px"/></td></tr></table>
+:whale: Each component used in this project has been put inside a **Docker Container**. :whale:
 
 Component | Utility
 ------ | -------
