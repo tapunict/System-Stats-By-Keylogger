@@ -9,16 +9,16 @@ class CSV:
     def __init__(self):
         pass
 
-    def __write__(self, path, row):
+    def __write(self, path, row):
         with open(path, 'a', encoding='UTF8') as f:
             writer = csv.writer(f)
             writer.writerow(row)
 
     def writeMetadata(self, uuid, window, timestampBegin, timestampEnd):
-        self.__write__('metadata.csv', [uuid, window, timestampBegin, timestampEnd])
+        self.__write('metadata.csv', [uuid, window, timestampBegin, timestampEnd])
 
     def writeLog(self, uuid, log):
-        self.__write__('logs.csv', [uuid, log])
+        self.__write('logs.csv', [uuid, log])
 
 
 class ExtractFeatures:
