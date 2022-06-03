@@ -15,10 +15,10 @@ class CSV:
             writer.writerow(row)
 
     def writeMetadata(self, uuid, window, timestampBegin, timestampEnd):
-        self.__write('metadata.csv', [uuid, window, timestampBegin, timestampEnd])
+        self.__write('/usr/app/server/csv/metadata.csv', [uuid, window, timestampBegin, timestampEnd])
 
     def writeLog(self, uuid, log):
-        self.__write('logs.csv', [uuid, log])
+        self.__write('/usr/app/server/csv/logs.csv', [uuid, log])
 
 
 class ExtractFeatures:
