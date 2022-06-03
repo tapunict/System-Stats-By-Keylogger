@@ -28,7 +28,7 @@ It sends a log to the TCP server on each foreground window change OR after 1 min
 The log has the following pattern:
 ```
 [UUID] :: [Window Title] :: [Timestamp Start]
-Text logged...
+Logged Text...
 [Timestamp End]
 ```
 
@@ -36,7 +36,7 @@ Each log is composed by:
 - **UUID**: Identifies the PC univocally. Has the following format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.
 - **Window Title**: Is the title of the window where the user has typed.
 - **Timestamp Start**: Indicates when the user started typing in that window.
-- **Text logged**: Is the set of keys pressed by the user and logged by the keylogger.
+- **Logged Text**: Is the set of keys pressed by the user and logged by the keylogger.
 - **Timestamp End**: Indicates when the user finished typing in that window.
 
 For instance:
@@ -56,7 +56,7 @@ It receives logs (from multiple clients) and passes them to the pipeline describ
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
 The following functions are available for each user (personal stats) and for all users (general stats):
-- For the Text Log:
+- For the Logged Text:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Windows and Timestamps:
     + Type of window classification (social, game, utility, others) :performing_arts:
