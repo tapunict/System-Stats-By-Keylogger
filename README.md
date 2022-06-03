@@ -65,8 +65,7 @@ The following functions are available for each user (personal stats) and for all
 
 ## Structure & Demo
 
-Let's see the structure of the project and how I have used all the components:
-
+Let's see the structure of the project and how I have used all the components. <br/>
 Each component used in this project has been put inside a **Docker Container** :whale:
 
 Component | Utility
