@@ -68,7 +68,7 @@ The following functions are available for each user (personal stats) and for all
 Let's see the structure of the project and how I have used all the components. <br/>
 Each component used in this project has been put inside a **Docker Container** :whale:
 
-Component | Utility
+Component | Description
 ------ | -------
 <img src="docs/logos/python-logo.png" width="165px" /> | I have used it to implement a multi-threading server that receives real-time logs via TCP requests on the 8800 port from multiple clients. It extracts the features seen above from the logs and saves them in two CSV files: <br/> **metadata.csv** = [UUID, Window Title, Timestamp of Begin, Timestamp of End] <br/> **logs.csv** = [UUID, Text Log] <br/><br/> Here is the UML schema: <br/><p align="center"><img src="docs/images/server-UML.svg"/></p>
 <img src="docs/logos/logstash-logo.png" width="165px" /> | **Logstash** is an open-source data collection engine with real-time pipelining capabilities. Logstash can dynamically unify data from disparate sources and normalize the data into destinations of your choice.<br/><br/> I have used it to create two different data flow: one for the metadata and one for the text logs. Logstash takes this input data from two files, metadata.csv and log.csv - they have been shared with the server container via a Docker volume. <br/><br/> Here is an example of what Logstash receives: <br/><br/> <p align="center"> <img src="docs/screens/logstash.png"/> </p>
