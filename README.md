@@ -67,7 +67,7 @@ The following functions are available for each user (personal stats) and for all
 
 Let's see the structure of the project and how I have used all the components:
 
-:whale: Each component used in this project has been put inside a **Docker Container**. :whale:
+Each component used in this project has been put inside a **Docker Container** :whale:
 
 Component | Utility
 ------ | -------
