@@ -100,12 +100,15 @@ class Server:
     def close(self):
         self.sock.close()
 
+ 
+NUM_OF_CLIENTS = 16
+PORT = 8800
 
-server = Server("0.0.0.0", 8800)
+server = Server("0.0.0.0", PORT)
 
 while True:
     try:
-        server.binding(16)
+        server.binding(NUM_OF_CLIENTS)
 
     except Exception as e:
         print("Error on connecting:", e)
