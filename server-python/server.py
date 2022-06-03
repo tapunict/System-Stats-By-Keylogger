@@ -23,26 +23,26 @@ class CSV:
 
 class ExtractFeatures:
     def __init__(self, log):
-        self.log = log.split("\r\n")
+        self.__log = log.split("\r\n")
 
     def getUUID(self):
-        uuid = self.log[0].split("] :: [")[0]
+        uuid = self.__log[0].split("] :: [")[0]
         return uuid[1:]
 
     def getWindow(self):
-        firstPart = self.log[0].split("] :: [")[1]
+        firstPart = self.__log[0].split("] :: [")[1]
         wnd = firstPart.split("] :: [")[0]
         return wnd
 
     def getTimestampBegin(self):
-        tmp = self.log[0].split("] :: [")[2]
+        tmp = self.__log[0].split("] :: [")[2]
         return tmp[:-1]
 
     def getLogText(self):
-        return self.log[1]
+        return self.__log[1]
 
     def getTimestampEnd(self):
-        return self.log[2][1:-1]
+        return self.__log[2][1:-1]
     
 
 class ClientThread:
