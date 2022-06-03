@@ -14730,7 +14730,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>For the Text Log:<ul>
+<li>For Logged Text:<ul>
 <li>Sentiment analysis </li>
 </ul>
 </li>
@@ -14747,8 +14747,8 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>For Windows and Timestamps:<ul>
-<li>Type of window classification (social, game, utility, others) </li>
+<li>For Metadata:<ul>
+<li>Type of window classification (social, utility, others) </li>
 <li>How much time is spent on each category of windows </li>
 <li>How much time is spent writing to the PC </li>
 </ul>
@@ -14915,7 +14915,7 @@ Text logged...
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="logos/docker-logo.png?v=1653175210" width="150px" /></p>
 <p>Each of the following components used has been put inside a <strong>Docker Container</strong>. <br/>
-All the Docker Containers have been connected via Docker Compose. <br/></p>
+All the Docker Containers have been connected via <strong>Docker Compose</strong>.</p>
 
 </div>
 </div>
@@ -14939,9 +14939,19 @@ All the Docker Containers have been connected via Docker Compose. <br/></p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="logos/python-logo.png?v=1653175210" width="150px" /></p>
-<p>It receives logs via TCP requests through the 8800 port. <br/>
-I have developed it using Python. <br/>
-It extracts the features by the log, and saves them into two CSV files.</p>
+
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>It is a multi-threading server that serves multiple clients. <br/>
+Receives logs via TCP requests on the 8800 port.</p>
 
 </div>
 </div>
@@ -14953,13 +14963,25 @@ It extracts the features by the log, and saves them into two CSV files.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>It extracts the features from the logs and saves them into two CSV files:</p>
 <p><em>metadata.csv</em> = [UUID, Window Title, Timestamp of Begin, Timestamp of End] <br/>
-<em>logs.csv</em> = [UUID, Text Log]</p>
+<em>logs.csv</em> = [UUID, Logged Text]</p>
 
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p align="center"><img src="images/server-UML.svg"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15001,7 +15023,7 @@ It extracts the features by the log, and saves them into two CSV files.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>I have used it to create two different data flow: one for the metadata and one for the text logs. Logstash takes this input data from two files, metadata.csv and log.csv - they have been shared with the server container via a Docker volume.</p>
+<p>I have used it to create two different data flow: one for the metadata and one for the text logs. Logstash takes this input data from two files, metadata.csv and logs.csv - they have been shared with the server container via a Docker volume.</p>
 
 </div>
 </div>
