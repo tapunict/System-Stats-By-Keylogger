@@ -56,7 +56,7 @@ It receives logs (from multiple clients) and passes them to the pipeline describ
 <p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
 
 The following functions are available for each user (personal stats) and for all users (general stats):
-- For the Logged Text:
+- For Logged Text:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Metadata:
     + Type of window classification (social, utility, others) :performing_arts:
