@@ -69,7 +69,7 @@ Let's see the structure of the project and how I have used all the components:
 
 &nbsp; | &nbsp;
 ------ | -------
-<img src="docs/logos/docker-logo.png?v=1653175210" width="165px"/> | Each of the following components used has been put inside a <b>Docker Container</b>.
+<img src="docs/logos/docker-logo.png?v=1653175210" width="150px"/> | Each of the following components used has been put inside a <b>Docker Container</b>.
 
 Component | Utility
 ------ | -------
