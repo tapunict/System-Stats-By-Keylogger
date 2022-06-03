@@ -67,7 +67,7 @@ The following functions are available for each user (personal stats) and for all
 
 Let's see the structure of the project and how I have used all the components:
 
-<img src="docs/logos/docker-logo.png?v=1653175210" width="100px" style="float: left;"/> Each of the following components used has been put inside a <b>Docker Container</b>.
+<img src="docs/logos/docker-logo.png?v=1653175210" width="130px" style="float: left; margin-right: 30px;"/> Each of the following components used has been put inside a <b>Docker Container</b>.
 
 Component | Utility
 ------ | -------
