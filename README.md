@@ -84,6 +84,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 ### Requisites
 
+* At least 12 GB of RAM.
 * At least 16 GB of free space.
 * Use of Linux, MacOS, or Windows WSL.
 * Need to download and install [Docker](https://docs.docker.com/get-docker/) (but the use of [Docker Desktop](https://www.docker.com/products/docker-desktop/) is optional).
