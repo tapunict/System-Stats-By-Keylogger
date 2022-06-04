@@ -59,6 +59,7 @@ The following functions are available for each user (personal stats) and for all
 - For Logged Text:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Metadata:
+    + The most used apps :mag:
     + Type of window classification (social, utility, others) :performing_arts:
     + How much time is spent on each category of windows :eyes:
     + How much time is spent writing to the PC :clock9:
@@ -85,7 +86,7 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 * At least 16 GB of free space.
 * Use of Linux, MacOS, or Windows WSL.
-* Need to download and install [Docker](https://docs.docker.com/get-docker/) (but [Docker Desktop](https://www.docker.com/products/docker-desktop/) is optional).
+* Need to download and install [Docker](https://docs.docker.com/get-docker/) (but the use of [Docker Desktop](https://www.docker.com/products/docker-desktop/) is optional).
 * The use of [Visual Studio Code](https://code.visualstudio.com/download) is strongly recommended.
 
 ### Installation and Use
