@@ -59,7 +59,7 @@ The following functions are available for each user (personal stats) and for all
 - For Logged Text:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Metadata:
-    + The most used apps :mag:
+    + The ranking of the most used apps :mag:
     + Type of window classification (social, utility, others) :performing_arts:
     + How much time is spent on each category of windows :eyes:
     + How much time is spent writing to the PC :clock9:
