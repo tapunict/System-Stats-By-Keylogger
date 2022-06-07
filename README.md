@@ -102,9 +102,9 @@ So that the repository is successfully cloned and project run smoothly, a few st
 
 Container | URL | Description
 ----- | ------- | -------
-broker | http://localhost:8080 | Kafka-UI to monitor Kafka clusters and Kafka topics
+broker | http://localhost:8080 | Kafka-UI
 elasticsearch | http://localhost:9200 | ElasticSearch basic URL
-elasticsearch | http://localhost:9200/keylogger/_search | ElasticSearch basic URL
+elasticsearch | http://localhost:9200/keylogger/_search | ElasticSearch basic index URL
 elasticsearch | [http://localhost:9200/keylogger/_search?...](http://localhost:9200/keylogger/_search?source_content_type=application/json&source={%22query%22:{%22match%22:{%22type%22:%22log%22}}}) | ElasticSearch URL to get all logs
 elasticsearch | [http://localhost:9200/keylogger/_search?...](http://localhost:9200/keylogger/_search?source_content_type=application/json&source={%22query%22:{%22match%22:{%22type%22:%22metadata%22}}}) | ElasticSearch URL to get all metadata
 kibana | http://localhost:5601 | Kibana basic URL
