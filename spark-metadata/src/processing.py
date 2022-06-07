@@ -83,7 +83,6 @@ def processBatch(df, id):
         doc.update(getDeltaTimestamps(doc['timestamp_begin'], doc['timestamp_end']))
         doc.update(getHeuristicWindowClassification(doc['window']))
         doc['timestamp'] = datetime.now()
-
         print(doc)
 
         id_str = '{}-{}-1'
