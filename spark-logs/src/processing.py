@@ -35,7 +35,6 @@ def processBatch(df, id):
         doc = row.asDict()
         doc['timestamp'] = datetime.now()
         doc.update(getSentiment(doc['logtext']))
-
         print(doc)
 
         id_str = '{}-{}-0'
