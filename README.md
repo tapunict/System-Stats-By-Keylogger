@@ -104,6 +104,7 @@ Container | URL | Description
 ----- | ------- | -------
 broker | http://localhost:8080 | Kafka-UI to monitor Kafka clusters and Kafka topics
 elasticsearch | http://localhost:9200 | ElasticSearch basic URL
+elasticsearch | http://localhost:9200/keylogger/_search | ElasticSearch keylogger index URL
 kibana | http://localhost:5601 | Kibana basic URL
 
 ## License :copyright: 
