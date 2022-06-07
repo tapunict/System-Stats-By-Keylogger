@@ -39,8 +39,10 @@ void SendLog(string &msg, string timestamp_end) {
     if (msg.empty())
         return;
 
-    if (!initWinsock())
+    if (!initWinsock()) {
+        msg.clear();
         return;
+    }
 
     msg += "\r\n[" + timestamp_end + "]";
 
