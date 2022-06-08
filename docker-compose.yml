@@ -114,13 +114,12 @@ services:
       - cluster.routing.allocation.disk.threshold_enabled=false
       - bootstrap.memory_lock=true
       - xpack.security.enabled=false
-      - ELASTIC_PASSWORD=test1234
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
+    healthcheck:
+      test: ["CMD-SHELL", "curl --silent localhost:9200/cluster/_health"]
+      interval: 30s
+      timeout: 30s
+      retries: 6
 
   #-----------------------#
   #        Kibana         #
@@ -131,7 +130,8 @@ services:
     container_name: kibana
     hostname: kibana
     depends_on: 
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
     ports:
       - 5601:5601
     volumes:
@@ -140,8 +140,6 @@ services:
     environment:
       - SERVERNAME=kibana
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
-      - ELASTICSEARCH_USERNAME=kibana
-      - ELASTICSEARCH_PASSWORD=test1234
 
   #-----------------------#
   #    Spark Clusters     #
