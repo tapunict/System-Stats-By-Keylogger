@@ -21,7 +21,7 @@ Additionally, this project was created as an exam project, to test and practice 
 
 ### Data Source: Windows Keylogger
 
-The data source is a Windows Keylogger for Italian keyboards only, developed in C++14 using Windows APIs. Sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity (if there is something to send). <br/>
+The data source is a Windows Keylogger for Italian keyboards only, developed in C++14 using Windows APIs. Sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity. <br/>
 It has been written and used just on my computer for academic purposes. :warning:
 
 The log has the following pattern:
