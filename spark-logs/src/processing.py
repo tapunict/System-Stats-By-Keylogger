@@ -9,7 +9,6 @@ from elasticsearch import Elasticsearch
 ES_URL = 'http://elasticsearch:9200'
 ES_INDEX = 'keylogger'
 
-
 es = Elasticsearch(
     ES_URL,
     verify_certs=False
