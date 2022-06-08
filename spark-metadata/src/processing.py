@@ -7,9 +7,6 @@ from elasticsearch import Elasticsearch
 
 ES_URL = 'http://elasticsearch:9200'
 ES_INDEX = 'keylogger'
-ES_USER = 'elastic'
-ES_PSW = 'test1234'
-
 
 es = Elasticsearch(
     ES_URL,
