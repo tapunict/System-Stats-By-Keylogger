@@ -53,7 +53,7 @@ For instance:
 ### Server System
 
 It receives logs (from multiple clients) and passes them to the pipeline described above and illustrated below:
-<p align="center"> <img src="docs/images/pipeline.png?v=1653225037" height="460px"/> </p>
+<p align="center"> <img src="docs/images/pipeline.png?v=1654694080" height="470px"/> </p>
 
 The following functions are available for each user (personal stats) and for all users (general stats):
 - For Logged Text:
