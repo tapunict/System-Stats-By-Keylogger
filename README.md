@@ -21,7 +21,7 @@ Additionally, this project was created as an exam project, to test and practice 
 
 ### Data Source: Windows Keylogger
 
-The data source is a Windows Keylogger only for Italian keyboards. <br/>
+The data source is a Windows Keylogger for only Italian keyboards. <br/>
 It has been written and used just on my computer for academic purposes. :warning: <br/>
 It has been developed in C++ and uses Windows APIs. <br/>
 It sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity.
