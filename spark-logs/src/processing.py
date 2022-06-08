@@ -25,7 +25,7 @@ def getSentiment(text):
     sentiment = vader.polarity_scores(text)
     
     sentiment.update((k, v * 100) for k, v in sentiment.items())
-    sentiment['grade'] = 'Positive' if sentiment['compound'] >= 0.05 else ('Negative' if sentiment['compound'] <= 0.05 else 'Neutral')
+    sentiment['grade'] = 'Positive' if sentiment['compound'] >= 5 else ('Negative' if sentiment['compound'] <= -5 else 'Neutral')
 
     return sentiment
     
