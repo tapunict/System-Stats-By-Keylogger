@@ -44,7 +44,7 @@ For instance:
 [2022-01-01 12:33:05]
 
 [00000000-0000-0000-0000-000000000000] :: [Untitled - Notepad] :: [2022-01-01 12:33:11]
-[SHIFT]The ree[BACKSPACE]sult is 24.544
+The result is 24.544
 [2022-01-01 12:33:59]
 ```
 
