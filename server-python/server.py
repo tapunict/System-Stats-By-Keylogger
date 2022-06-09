@@ -55,8 +55,9 @@ class ClientThread:
             return data.decode('utf8')
 
         except Exception as e:
-            self.__conn.close()
             print("Error in receiving:", e)
+            self.__conn.close()
+            return None
             
     def __csvPrint(self, fts):
         output = CSV()
@@ -75,7 +76,8 @@ class ClientThread:
         del features
     
     def __run(self):
-        self.__processing(self.__receive())
+        log = self.__receive()
+        if log is not None: self.__processing(log)
 
 
 class Server:
