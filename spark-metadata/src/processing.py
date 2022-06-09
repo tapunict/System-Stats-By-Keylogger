@@ -10,7 +10,6 @@ ES_INDEX = 'keylogger'
 
 es = Elasticsearch(
     ES_URL,
-    basic_auth=(ES_USER, ES_PSW),
     verify_certs=False
 )  
 
