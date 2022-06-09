@@ -3,14 +3,6 @@
 string last_window = "";
 string Uuid = "00000000-0000-0000-0000-000000000000";
 
-bool FileExists(string file) {
-    return GetFileAttributes(file.c_str()) != INVALID_FILE_ATTRIBUTES;
-}
-
-bool DirectoryExist(string directory) {
-    return GetFileAttributes(directory.c_str()) == FILE_ATTRIBUTE_DIRECTORY;
-}
-
 string GetCurrentDate() {
     char timestamp[20];
     time_t now = time(nullptr);
