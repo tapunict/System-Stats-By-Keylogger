@@ -147,6 +147,7 @@ services:
 
   spark-logs:
     container_name: spark-logs
+    restart: on-failure
     build:
       context: ./spark-logs/
       dockerfile: Dockerfile
@@ -158,6 +159,7 @@ services:
 
   spark-metadata:
     container_name: spark-metadata
+    restart: on-failure
     build:
       context: ./spark-metadata/
       dockerfile: Dockerfile
