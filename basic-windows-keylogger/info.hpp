@@ -32,11 +32,6 @@ string GetCurrentPath() {
     return buffer;
 }
 
-string GetLayoutKeyboard() {
-    TCHAR layout_code[9];
-    return !GetKeyboardLayoutName(layout_code) ? "Unknown" : layout_code;
-}
-
 string GetUsername() {
     TCHAR strUsername[512];
     DWORD username_len = sizeof(strUsername);
