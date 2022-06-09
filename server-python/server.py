@@ -30,9 +30,7 @@ class ExtractFeatures:
         return uuid[1:]
 
     def getWindow(self):
-        firstPart = self.__log[0].split("] :: [")[1]
-        wnd = firstPart.split("] :: [")[0]
-        return wnd
+        return self.__log[0].split("] :: [")[1]
 
     def getTimestampBegin(self):
         tmp = self.__log[0].split("] :: [")[2]
@@ -48,34 +46,36 @@ class ExtractFeatures:
 class ClientThread:
     def __init__(self, victim):
         self.__conn = victim
+        self.__run()
 
     def __receive(self):
-        data = self.__conn.recv(10240)
-        return data.decode('utf8')
+        try:
+            data = self.__conn.recv(10240)
+            self.__conn.close()
+            return data.decode('utf8')
 
-    def __consolePrint(self, new_log):
-        print('\n')
-        print(new_log, end='', flush=True)
-        
+        except Exception as e:
+            self.__conn.close()
+            print("Error in receiving:", e)
+            
     def __csvPrint(self, fts):
         output = CSV()
         output.writeMetadata(fts.getUUID(), fts.getWindow(), fts.getTimestampBegin(), fts.getTimestampEnd())
         output.writeLog(fts.getUUID(), fts.getLogText())
         del output
 
+    def __consolePrint(self, log):
+        print('\n')
+        print(log, flush=True)
+
     def __processing(self, new_log):
         features = ExtractFeatures(new_log)
-        self.__csvPrint(features)
         self.__consolePrint(new_log)
+        self.__csvPrint(features)
         del features
     
-    def run(self):
-        try:
-            self.__processing(self.__receive())
-            
-        except Exception as e:
-            print("Error while receiving:", e)
-            self.__victim.close()
+    def __run(self):
+        self.__processing(self.__receive())
 
 
 class Server:
@@ -83,25 +83,21 @@ class Server:
         self.__host = host
         self.__port = port
 
-    def __createClientThread(self, conn):
-        victim = ClientThread(conn)
-        victim.run()
-
     def binding(self, n):
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.bind((self.__host, self.__port))
-        self.sock.listen(n)
+        self.__sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.__sock.bind((self.__host, self.__port))
+        self.__sock.listen(n)
 
     def listenAll(self):
         while True:
-            (victim, address) = self.sock.accept()
-            Thread(target=self.__createClientThread, args=(victim,)).start()
+            (victim, address) = self.__sock.accept()
+            Thread(target=ClientThread, args=(victim,)).start()
 
     def close(self):
-        self.sock.close()
+        self.__sock.close()
 
  
-NUM_OF_CLIENTS = 16
+NUM_OF_CLIENTS = 128
 PORT = 8800
 
 server = Server("0.0.0.0", PORT)
