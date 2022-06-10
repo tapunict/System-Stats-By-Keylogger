@@ -23,7 +23,6 @@ void ReadUUID() {
     TCHAR value[37];
     DWORD value_length = sizeof(value);
     LONG updateRes = RegQueryValueEx(hkey, "UUID", nullptr, nullptr, (LPBYTE)value, &value_length);
-
     RegCloseKey(hkey);
 
     if (updateRes == ERROR_SUCCESS) Uuid = value;
