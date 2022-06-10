@@ -1,7 +1,6 @@
 from datetime import date, datetime
 
 from deep_translator import GoogleTranslator
-
 from elasticsearch import Elasticsearch
 
 
@@ -19,55 +18,29 @@ def getDeltaTimestamps(t_begin, t_end):
     delta_secs = tdelta.total_seconds()
     return dict({'delta_secs': delta_secs})
 
-def getHeuristicWindowClassification(window):
-    social = [
-        'microsoft teams',
-        'whatsapp',
-        'instagram',
-        'facebook',
-        'telegram',
-        'tiktok',
-        'discord',
-        'twitter',
-        'gmail',
-        'google meet',
-        'youtube',
-        'tumblr',
-        'skype',
-        'linkedin',
-        'inbox'
-    ]
+def loadWindowTitles(path):
+    with open(path, 'r') as fd:
+        return fd.read().split('\n')
 
-    utilities = [
-        'calculator',
-        'calendar',
-        'notepad',
-        'snipping tool',
-        'command prompt',
-        'notepad',
-        'settings',
-        'control panel',
-        'clock',
-        'search',
-        'programs and features',
-        'windows security',
-        'photos',
-        'word',
-        'excel',
-        'powerpoint',
-        'access',
-        'unknown'
-    ]
+def getWindowClassification(window):
+    social = loadWindowTitles('titles/social.txt')
+    utilities = loadWindowTitles('titles/utilities.txt')
+    entertainment = loadWindowTitles('titles/entertainment.txt')
+    web = loadWindowTitles('titles/web.txt')
 
     window = GoogleTranslator(source='auto', target='en').translate(window).lower()  
     
-    for s in social:
-        if window.find(s) != -1:
-            return dict({'window_category': 'Social'})
-    
-    for u in utilities:
-        if window.find(u) != -1:
-            return dict({'window_category': 'Utility'})
+    if any(t in window for t in social):
+        return dict({'window_category': 'Social'})
+
+    if any(t in window for t in utilities):
+        return dict({'window_category': 'Utility'})
+
+    if any(t in window for t in entertainment):
+        return dict({'window_category': 'Entertainment'})
+
+    if any(t in window for t in web):
+        return dict({'window_category': 'Web Browsing'})
 
     return dict({'window_category': 'Other'})
 
@@ -77,7 +50,7 @@ def processBatch(df, id):
         
         doc = row.asDict()
         doc.update(getDeltaTimestamps(doc['timestamp_begin'], doc['timestamp_end']))
-        doc.update(getHeuristicWindowClassification(doc['window']))
+        doc.update(getWindowClassification(doc['window']))
         doc['timestamp'] = datetime.now()
         print(doc)
 
