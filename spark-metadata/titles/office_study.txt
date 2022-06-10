@@ -1,0 +1,7 @@
+microsoft teams
+google meet
+slack
+word
+excel
+powerpoint
+libreoffice

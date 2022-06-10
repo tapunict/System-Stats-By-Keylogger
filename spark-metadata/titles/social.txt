@@ -1,4 +1,3 @@
-microsoft teams
 whatsapp
 instagram
 facebook
@@ -7,8 +6,6 @@ tiktok
 discord
 twitter
 gmail
-google meet
-slack
 tumblr
 skype
 linkedin
