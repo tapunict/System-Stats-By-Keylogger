@@ -12,24 +12,6 @@ string GetCurrentDate() {
     return timestamp;
 }
 
-string GetComputername() {
-    TCHAR strComputerName[MAX_COMPUTERNAME_LENGTH + 1];
-    DWORD computername_len = sizeof(strComputerName);
-    return !GetComputerName(strComputerName, &computername_len) ? "Unknown" : strComputerName;
-}
-
-string GetCurrentPath() {
-    TCHAR buffer[MAX_PATH];
-    GetModuleFileName(nullptr, buffer, MAX_PATH);
-    return buffer;
-}
-
-string GetUsername() {
-    TCHAR strUsername[512];
-    DWORD username_len = sizeof(strUsername);
-    return !GetUserName(strUsername, &username_len) ? "Unknown" : strUsername;
-}
-
 string GenerateUUID() {
     stringstream ss;
     srand((unsigned int)time(nullptr));
