@@ -27,6 +27,7 @@ def getWindowClassification(window):
     utilities = loadWindowTitles('titles/utilities.txt')
     entertainment = loadWindowTitles('titles/entertainment.txt')
     web = loadWindowTitles('titles/web.txt')
+    office = loadWindowTitles('titles/office_study.txt')
 
     window = GoogleTranslator(source='auto', target='en').translate(window).lower()  
     
@@ -41,6 +42,9 @@ def getWindowClassification(window):
 
     if any(t in window for t in web):
         return dict({'window_category': 'Web Browsing'})
+
+    if any(t in window for t in office):
+        return dict({'window_category': 'Office & Study'})
 
     return dict({'window_category': 'Other'})
 
