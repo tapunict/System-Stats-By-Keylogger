@@ -1,5 +1,9 @@
 #pragma once
 
+#ifndef __cplusplus
+    #error A C++ compiler is required!
+#endif
+
 #define PROJECT_COPYRIGHT "Copyright (C) 2022 - Antonio Scardace"
 
 #include <Windows.h>
