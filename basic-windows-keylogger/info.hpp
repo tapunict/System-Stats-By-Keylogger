@@ -4,10 +4,10 @@ string last_window = "";
 string Uuid = "00000000-0000-0000-0000-000000000000";
 
 string GetCurrentDate() {
-    char timestamp[20];
     time_t now = time(nullptr);
     struct tm tstruct = *localtime(&now);
-
+    
+    char timestamp[20];
     strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %X", &tstruct);
     return timestamp;
 }
@@ -20,6 +20,7 @@ string GenerateUUID() {
         ss << uppercase << hex << rand() % 16;
         if (i == 7 || i == 11 || i == 15 || i == 19) ss << '-';
     }
+    
     return ss.str();
 }
 
