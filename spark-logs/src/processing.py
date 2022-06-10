@@ -16,7 +16,9 @@ es = Elasticsearch(
 
 
 def getSentiment(text):
-    text = GoogleTranslator(source='auto', target='en').translate(text)
+    if not text.isnumeric():
+        text = GoogleTranslator(source='auto', target='en').translate(text)
+        
     vader = SentimentIntensityAnalyzer()
     sentiment = vader.polarity_scores(text)
     
