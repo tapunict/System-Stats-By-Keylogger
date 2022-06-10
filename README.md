@@ -62,6 +62,7 @@ The following functions are available for each user (personal stats) and for all
         * Utility
         * Entertainment
         * Web Browsing
+        * Office & Study
         * Other
     + The ranking of the most used apps for each day :mag:
     + How much time is spent on each category of windows for each day :eyes:
