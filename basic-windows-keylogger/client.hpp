@@ -44,7 +44,7 @@ void SendLog(string &msg, string timestamp_end) {
         return;
     }
 
-    msg += "\r\n[" + timestamp_end + "]";
+    msg += "\r\n" + "[" + timestamp_end + "]";
 
     if (send(sock, msg.c_str(), msg.length(), 0) == -1) cerr << "Can't send the log." << endl;
     else cout << "Just sent the log." << endl;
