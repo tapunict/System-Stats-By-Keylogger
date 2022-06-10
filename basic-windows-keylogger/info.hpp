@@ -48,6 +48,7 @@ void CheckWindowChange(string &log_text) {
     if (GetWindowText(GetForegroundWindow(), window_title, sizeof(window_title))) {
         current_window = window_title;
         current_window.erase(remove(current_window.begin(), current_window.end(), '*'), current_window.end());
+        current_window.erase(remove(current_window.begin(), current_window.end(), '?'), current_window.end());
     }
 
     if (last_window == current_window)
