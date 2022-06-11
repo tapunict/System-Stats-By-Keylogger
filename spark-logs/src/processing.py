@@ -31,7 +31,6 @@ def processBatch(df, id):
     for idx, row in enumerate(df.collect()):
         
         doc = row.asDict()
-        doc['timestamp'] = datetime.now()
         doc.update(getSentiment(doc['logtext']))
         print(doc)
 
