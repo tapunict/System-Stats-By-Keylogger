@@ -5,7 +5,7 @@ from elasticsearch import Elasticsearch
 
 
 ES_URL = 'http://elasticsearch:9200'
-ES_INDEX = 'keylogger'
+ES_INDEX = 'keylogger_stats'
 
 es = Elasticsearch(
     ES_URL,
