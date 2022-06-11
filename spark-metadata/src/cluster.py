@@ -14,9 +14,10 @@ KAFKA_TOPIC = 'metadata'
 def getLogSchema():
     return tp.StructType([
         tp.StructField(name='type',            dataType=tp.StringType()),
-        tp.StructField(name='timestamp_begin', dataType=tp.TimestampType()),
-        tp.StructField(name='window',          dataType=tp.StringType()),
         tp.StructField(name='uuid',            dataType=tp.StringType()),
+        tp.StructField(name='window',          dataType=tp.StringType()),
+        tp.StructField(name='@timestamp',      dataType=tp.TimestampType()),
+        tp.StructField(name='timestamp_begin', dataType=tp.TimestampType()),
         tp.StructField(name='timestamp_end',   dataType=tp.TimestampType()),
     ])
 

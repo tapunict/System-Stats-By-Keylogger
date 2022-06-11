@@ -55,7 +55,6 @@ def processBatch(df, id):
         doc = row.asDict()
         doc.update(getDeltaTimestamps(doc['timestamp_begin'], doc['timestamp_end']))
         doc.update(getWindowClassification(doc['window']))
-        doc['timestamp'] = datetime.now()
         print(doc)
 
         id_str = '{}-{}-1'
