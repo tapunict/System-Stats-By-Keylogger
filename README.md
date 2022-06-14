@@ -108,7 +108,7 @@ elasticsearch | http://localhost:9200/keylogger_stats/_search | ElasticSearch in
 elasticsearch | [http://localhost:9200/keylogger_stats/_search?...](http://localhost:9200/keylogger_stats/_search?source_content_type=application/json&source={%22query%22:{%22match%22:{%22type%22:%22log%22}}}) | ElasticSearch URL to get all logs
 elasticsearch | [http://localhost:9200/keylogger_stats/_search?...](http://localhost:9200/keylogger_stats/_search?source_content_type=application/json&source={%22query%22:{%22match%22:{%22type%22:%22metadata%22}}}) | ElasticSearch URL to get all metadata
 kibana | http://localhost:5601 | Kibana basic URL
-kibana | [http://localhost:5601/dashboards/...](http://localhost:5601/app/dashboards#/list?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-24h,to:now))) | Kibana Dashboards List
+kibana | [http://localhost:5601/dashboards/last24hours...](http://localhost:5601/app/dashboards#/list?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-24h,to:now))) | Kibana Dashboards List
 
 ## License :copyright: 
 
