@@ -20,7 +20,8 @@ def getDeltaTimestamps(t_begin, t_end):
 
 def loadWindowTitles(path):
     with open(path, 'r') as fd:
-        return fd.read().split('\n')
+        titles = fd.read().split('\n')
+        return set(titles)
 
 def getWindowClassification(window):
     social = loadWindowTitles('titles/social.txt')
