@@ -28,9 +28,7 @@ def getWindowClassification(window):
     utilities = loadWindowTitles('titles/utilities.txt')
     entertainment = loadWindowTitles('titles/entertainment.txt')
     web = loadWindowTitles('titles/web.txt')
-    office = loadWindowTitles('titles/office_study.txt')
-
-    window = GoogleTranslator(source='auto', target='en').translate(window).lower()  
+    office = loadWindowTitles('titles/office_study.txt')  
     
     if any(t in window for t in social):
         return dict({'window_category': 'Social'})
@@ -54,6 +52,8 @@ def processBatch(df, id):
     for idx, row in enumerate(df.collect()):
         
         doc = row.asDict()
+        doc['window'] = GoogleTranslator(source='auto', target='en').translate(doc['window']).lower()
+    
         doc.update(getDeltaTimestamps(doc['timestamp_begin'], doc['timestamp_end']))
         doc.update(getWindowClassification(doc['window']))
         print(doc)
