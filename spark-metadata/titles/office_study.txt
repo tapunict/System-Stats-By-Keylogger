@@ -5,3 +5,11 @@ word
 excel
 powerpoint
 libreoffice
+google docs
+google sheets
+google presentations
+google modules
+google classroom
+visual studio code
+visual studio
+skype
