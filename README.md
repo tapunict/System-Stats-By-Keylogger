@@ -54,6 +54,7 @@ The following functions are available for each user (personal stats) and for all
     + Top 10 Last Logged Texts :page_facing_up:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Metadata:
+    + Top 10 most used applications :bookmark:
     + Type of used windows classification :bar_chart:
         * Social
         * Utility
@@ -63,7 +64,6 @@ The following functions are available for each user (personal stats) and for all
         * Other
     + Overall time spent on each category of window :eyes:
     + Average time spent on each category of window :satellite:
-    + Average time spent writing on each category of window :calendar:
     + Overall time spent writing to the PC :computer:
     + Average time spent writing on a window :memo:
 
