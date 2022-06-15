@@ -23,6 +23,11 @@ def loadWindowTitles(path):
         titles = fd.read().split('\n')
         return set(titles)
 
+def checkAndUpdate(titles, window, category):
+    for t in titles:
+        if t in window:
+            return dict({'window': t.title(), 'window_category': category})
+
 def getWindowClassification(window):
     social = loadWindowTitles('titles/social.txt')
     utilities = loadWindowTitles('titles/utilities.txt')
@@ -30,20 +35,20 @@ def getWindowClassification(window):
     web = loadWindowTitles('titles/web.txt')
     office = loadWindowTitles('titles/office_study.txt')  
     
-    if any(t in window for t in social):
-        return dict({'window_category': 'Social'})
+    if (check := checkAndUpdate(social, window, 'Social')) is not None:
+        return check
 
-    if any(t in window for t in utilities):
-        return dict({'window_category': 'Utility'})
+    if (check := checkAndUpdate(utilities, window, 'Utility')) is not None:
+        return check
+        
+    if (check := checkAndUpdate(entertainment, window, 'Entertainment')) is not None:
+        return check
 
-    if any(t in window for t in entertainment):
-        return dict({'window_category': 'Entertainment'})
+    if (check := checkAndUpdate(web, window, 'Web Browsing')) is not None:
+        return check
 
-    if any(t in window for t in web):
-        return dict({'window_category': 'Web Browsing'})
-
-    if any(t in window for t in office):
-        return dict({'window_category': 'Office & Study'})
+    if (check := checkAndUpdate(office, window, 'Office & Study')) is not None:
+        return check
 
     return dict({'window_category': 'Other'})
 
