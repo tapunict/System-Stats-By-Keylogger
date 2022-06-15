@@ -51,7 +51,7 @@ Receives logs (from multiple clients) and passes them to the pipeline illustrate
 
 The following functions are available for each user (personal stats) and for all users (general stats):
 - For Logged Text:
-    + Top 10 Last Logged Texts
+    + Top 10 Last Logged Texts :page_facing_up:
     + Sentiment analysis :chart_with_upwards_trend:
 - For Metadata:
     + Type of used windows classification :bar_chart:
@@ -62,10 +62,10 @@ The following functions are available for each user (personal stats) and for all
         * Office & Study
         * Other
     + Overall time spent on each category of window :eyes:
-    + Average time spent on each category of window :eyes:
-    + Average time spent writing on each category of window
-    + Overall time spent writing to the PC
-    + Average time spent writing on a window
+    + Average time spent on each category of window :satellite:
+    + Average time spent writing on each category of window :calendar:
+    + Overall time spent writing to the PC :computer:
+    + Average time spent writing on a window :memo:
 
 ## Structure & Demo
 
