@@ -51,7 +51,7 @@ def getGeoIpCoords(ip_address):
     geoip = api_resp.content.decode().split("(")[1]
     geoip = json.loads(geoip[:-1])
     
-    latlng = geoip['latitude'] + ', ' + geoip['longitude']
+    latlng = str(geoip['latitude']) + ', ' + str(geoip['longitude'])
     return dict({'location': latlng})
 
 # -------------------------------------------------- #
