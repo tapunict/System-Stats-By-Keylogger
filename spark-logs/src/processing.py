@@ -1,5 +1,3 @@
-from datetime import date, datetime
-
 from deep_translator import GoogleTranslator
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -15,6 +13,13 @@ es = Elasticsearch(
 )  
 
 
+# ------------------------------------------------------------------------------- #
+# If the text is not a number, translates it to english to improve the VADER job
+# Then, VADER takes this text and calculates the sentiment analysis dictionary
+# Finally, it adds a new field: "grade". It is based on compound value
+# Returns the dictionary [neg, neu, pos, compound, grade]
+# ------------------------------------------------------------------------------- #
+
 def getSentiment(text):
     if not text.isnumeric():
         text = GoogleTranslator(source='auto', target='en').translate(text)
@@ -26,6 +31,7 @@ def getSentiment(text):
     sentiment['grade'] = 'Positive' if sentiment['compound'] >= 5 else ('Negative' if sentiment['compound'] <= -5 else 'Neutral')
 
     return sentiment
+
     
 def processBatch(df, id):
     for idx, row in enumerate(df.collect()):
