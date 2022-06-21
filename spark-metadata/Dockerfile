@@ -2,7 +2,7 @@ FROM jupyter/pyspark-notebook:spark-3.1.1
 
 LABEL mantainer="Antonio Scardace" 
 
-RUN pip3 install pyspark numpy elasticsearch deep_translator
+RUN pip3 install pyspark numpy elasticsearch deep_translator requests
 
 WORKDIR /usr/app/spark-metadata/
 COPY ./src/ .
