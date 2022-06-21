@@ -27,7 +27,7 @@ The log has the following pattern:
 ```
 [UUID] :: [Window Title] :: [Timestamp Start]
 Logged Text...
-[Timestamp End] :: [Public IP Address]
+[Timestamp End] :: [IP Address]
 ```
 
 Each log is composed by:
@@ -36,7 +36,7 @@ Each log is composed by:
 - **Timestamp Start**: Indicates when the user started typing in that window.
 - **Logged Text**: Is the set of keys pressed by the user and logged by the keylogger.
 - **Timestamp End**: Indicates when the user finished typing in that window.
-- **Public IP Address**: Is the public IP address. If the PC has no connection, the default value is "Unknown".
+- **IP Address**: Is the public IP address. If the PC has no connection, the default value is "Unknown".
 
 For instance:
 ```
