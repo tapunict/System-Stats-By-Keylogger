@@ -14,8 +14,8 @@ class CSV:
             writer = csv.writer(f)
             writer.writerow(row)
 
-    def writeMetadata(self, uuid, window, timestampBegin, timestampEnd):
-        self.__write('/usr/app/server/csv/metadata.csv', [uuid, window, timestampBegin, timestampEnd])
+    def writeMetadata(self, uuid, window, timestampBegin, timestampEnd, ipAddress):
+        self.__write('/usr/app/server/csv/metadata.csv', [uuid, window, timestampBegin, timestampEnd, ipAddress])
 
     def writeLog(self, uuid, log):
         self.__write('/usr/app/server/csv/logs.csv', [uuid, log])
@@ -40,7 +40,12 @@ class ExtractFeatures:
         return self.__log[1]
 
     def getTimestampEnd(self):
-        return self.__log[2][1:-1]
+        tmp = self.__log[2].split("] :: [")[0]
+        return tmp[1:]
+    
+    def getIpAddress(self):
+        ip = self.__log[2].split("] :: [")[1]
+        return ip[:-1]
     
 
 class ClientThread:
@@ -61,7 +66,7 @@ class ClientThread:
             
     def __csvPrint(self, fts):
         output = CSV()
-        output.writeMetadata(fts.getUUID(), fts.getWindow(), fts.getTimestampBegin(), fts.getTimestampEnd())
+        output.writeMetadata(fts.getUUID(), fts.getWindow(), fts.getTimestampBegin(), fts.getTimestampEnd(), fts.getIpAddress())
         output.writeLog(fts.getUUID(), fts.getLogText())
         del output
 
@@ -98,7 +103,7 @@ class Server:
     def close(self):
         self.__sock.close()
 
- 
+
 NUM_OF_CLIENTS = 128
 PORT = 8800
 
