@@ -20,7 +20,8 @@ This project was created as an exam project, to test and practice the following 
 
 ## Real Use Case
 
-The aim of the project is to make stats on the real-time use of the system by the user (and by users in general). <br/>
+The aim of the project is to make stats on the real-time use of the system by the user (and by users in general).
+
 It can be useful as:
 1. System Monitor owned by **Operating Systems** owners
 2. System Monitor for **Public Offices Computers**
