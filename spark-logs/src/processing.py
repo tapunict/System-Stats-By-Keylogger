@@ -11,8 +11,8 @@ es = Elasticsearch(
     ES_URL,
     verify_certs=False
 )  
-
-
+ 
+    
 # ------------------------------------------------------------------------------- #
 # If the text is not a number, translates it to english to improve the VADER job
 # Then, VADER takes this text and calculates the sentiment analysis dictionary
@@ -22,8 +22,9 @@ es = Elasticsearch(
 
 def getSentiment(text):
     if not text.isnumeric():
+        text = text.replace('[ENTER]', '\n')
         text = GoogleTranslator(source='auto', target='en').translate(text)
-        
+
     vader = SentimentIntensityAnalyzer()
     sentiment = vader.polarity_scores(text)
     
