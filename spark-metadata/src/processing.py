@@ -38,7 +38,7 @@ es.indices.create(
 def getDeltaTimestamps(t_begin, t_end):
     tdelta = t_end - t_begin
     delta_secs = tdelta.total_seconds()
-    return dict({'delta_secs': delta_secs})
+    return {'delta_secs': delta_secs}
 
 # ---------------------------------------------------- #
 # Retrieves via API the public IP address geolocation
@@ -52,7 +52,7 @@ def getGeoIpCoords(ip_address):
     geoip = json.loads(geoip[:-1])
     
     latlng = str(geoip['latitude']) + ', ' + str(geoip['longitude'])
-    return dict({'location': latlng})
+    return {'location': latlng}
 
 # -------------------------------------------------- #
 # Given the file of titles, it reads all the titles
@@ -73,7 +73,7 @@ def loadWindowTitles(path):
 def checkAndUpdate(titles, window, category):
     for t in titles:
         if t in window:
-            return dict({'window': t.title(), 'window_category': category})
+            return {'window': t.title(), 'window_category': category}
 
 # ------------------------------------------------- #
 # Loads window titles for each category of window
@@ -103,7 +103,7 @@ def getWindowClassification(window):
     if (res := checkAndUpdate(office, window, 'Office & Study')) is not None:
         return res
 
-    return dict({'window_category': 'Other'})
+    return {'window_category': 'Other'}
 
 
 def processBatch(df, id):
