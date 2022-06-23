@@ -8,8 +8,7 @@ _Dept of Math and Computer Science, University of Catania_
 
 The course aims to study and use useful technologies to build end-to-end solutions to analyze, manage, archive, process, and view a high amount of data in real-time. For instance, we have seen: Docker containers, and pipelines built with Logstash (for data ingestion), Kafka (for data streaming), Spark (for data processing), ElasticSearch (for data storing), and Kibana (for data visualization). 
 
-The aim of the project is to make stats on the real-time use of the system by the user (and by users in general). <br/>
-Additionally, this project was created as an exam project, to test and practice the following skills:
+This project was created as an exam project, to test and practice the following skills:
 * Knowledge of Docker
 * Knowledge of Data Ingestion via Logstash
 * Knowledge of Data Streaming via Kafka
@@ -18,6 +17,16 @@ Additionally, this project was created as an exam project, to test and practice 
 * Knowledge of Data Visualization via Kibana
 * Knowledge of Jupyter Notebook (for the presentation)
 * Good coding skills (legible, reliable, documented, etc.) :computer:
+
+## Real Use Case
+
+The aim of the project is to make stats on the real-time use of the system by the user (and by users in general). <br/>
+It can be useful as:
+1. System Monitor owned by **Operating Systems** owners
+2. System Monitor for **Public Offices Computers**
+3. System Monitor for **Prison Computers**
+4. **Parental Control**
+5. **Spyware**
 
 ### Data Source: Windows Keylogger
 
