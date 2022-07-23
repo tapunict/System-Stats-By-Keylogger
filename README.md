@@ -1,7 +1,7 @@
 # System-Stats-By-Keylogger
 _Project of Technologies for Advanced Programming_
 
-_Grade: 30 cum Laude / 30_
+_Grade: 30 with honors / 30_
 
 _Antonio Scardace_ @ 
 _Dept of Math and Computer Science, University of Catania_
