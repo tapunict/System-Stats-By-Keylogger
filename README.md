@@ -52,7 +52,7 @@ Each log is composed by:
 
 For instance:
 ```
-[00000000-0000-0000-0000-000000000000] :: [WhatsApp] :: [2022-01-01 12:00:00]
+[154A9DC6-FF4E-4149-B81C-610AE7BBD151] :: [WhatsApp] :: [2022-01-01 12:00:00]
 Hi Nicole, happy new year!!
 [2022-01-01 12:00:13] :: [1.2.3.4]
 ```
@@ -75,7 +75,7 @@ The following functions are available for each user (personal stats) and for all
         * Web Browsing
         * Office & Study
         * Other
-    + Customers Geolocation by IP :earth_americas
+    + Customers Geolocation by IP :earth_americas:
     + Different stats about time spent writing to the PC :eyes:
 
 ## Structure & Demo
@@ -88,7 +88,7 @@ Component | Description
 <img src="docs/logos/python-logo.png" width="165px" /> | I have used it to implement a multi-threading server that receives real-time logs via TCP requests on the 8800 port from multiple clients. It extracts the features seen above from the logs and saves them in two CSV files: <br/><br/> **metadata.csv** = [UUID, Window Title, Timestamp of Begin, Timestamp of End, IP Address] <br/> **logs.csv** = [UUID, Logged Text] <br/><br/><p align="center"><img src="docs/images/server-schema.svg"/></p>
 <img src="docs/logos/logstash-logo.png" width="165px" /> | I have used **Logstash** to create two different data flow: one for the metadata and one for the text logs. Logstash takes this input data from two files, metadata.csv and logs.csv - they have been shared with the server container via a Docker volume. <br/><br/> Here is an example of what Logstash receives: <br/><br/> <p align="center"> <img src="docs/snaps/logstash.png"/> </p>
 <img src="docs/logos/kafka-logo.png?v=1653055181" width="165px" /> | I have used **Apache Kafka** to make a single cluster, which has two topics: one for logs and one for metadata. It receives two different dataflows by Logstash and stores them to be pulled by Spark. **Kafka Stream** has not been used. <br/><br/> <p align="center"> <img src="docs/snaps/kafka-ui-clusters.png"/> <img src="docs/snaps/kafka-ui-topics.png"/> </p>
-<img src="docs/logos/spark-logo.png" width="165px" /> | I have created two Docker Containers - one for each Kafka Topic we need to read from. Each of them, after the processing, saves the documents into the Elasticsearch index _keylogger_. <br/> In the first, **Spark Streaming** read data from the _logs_ topic and adds a little set of features. It is the VADER dictionary. <br/> In the second, **Spark Streaming** read data from the _metadata_ topic and adds three features: the type of the window, the difference (in seconds) between the two timestamps fields, and the public IP address geolocation coordinates (if it isn't set to "Unknown").
+<img src="docs/logos/spark-logo.png" width="165px" /> | I have created two Docker Containers - one for each Kafka Topic we need to read from. Each of them, after the processing, saves the documents into the Elasticsearch index _keylogger_. <br/> In the first, **Spark Streaming** read data from the _logs_ topic and adds a little set of features. It is the VADER dictionary. <br/> In the second, **Spark Streaming** read data from the _metadata_ topic and adds three features: the type of the window, the difference (in seconds) between the two timestamps fields, and the public IP address geolocation coordinates (if it isn't set to "Unknown"). <br/>
 <img src="docs/logos/elasticsearch-logo.png" width="165px" /> | I have used **Elasticsearch** to create a cluster, containing the *keylogger_stats* index, shared only by a single node: *es001*. It receives docs from Spark Streaming. Data are saved into a Docker Volume to make the application persistent in time. <br/><br/> Here is an example of what Elasticsearch contains and shows: <br/><br/> <p align="center"> <img src="docs/snaps/elasticsearch.png"/> </p>
 <img src="docs/logos/kibana-logo.png?v=1653055181" width="165px" /> | I have used **Kibana** to visualize some stats in real-time - I have set the dashboard auto-refresh to happen every second. The dashboard analyzes just the data that have arrived in the last 24 hours. It shows general data (of all PCs) and if the user clicks on a specific UUID, the dashboard shows data of that particular PC. <br/><br/> <img src="docs/snaps/kibana-0.png"/> <img src="docs/snaps/kibana-1.png?v=1655832199"/> <img src="docs/snaps/kibana-2.png"/> <img src="docs/snaps/kibana-3.png"/> <img src="docs/snaps/kibana-4.png"/>
 
