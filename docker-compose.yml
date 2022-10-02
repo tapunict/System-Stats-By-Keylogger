@@ -108,7 +108,7 @@ services:
     volumes:
       - es001-data:/usr/share/elasticsearch/data/
     ports:
-      - 9200:9200     
+      - 9200:9200
     environment:
       - node.name=es001
       - discovery.type=single-node
@@ -131,7 +131,7 @@ services:
     image: docker.elastic.co/kibana/kibana:8.2.0
     container_name: kibana
     hostname: kibana
-    depends_on: 
+    depends_on:
       elasticsearch:
         condition: service_healthy
     ports:
@@ -155,7 +155,7 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - zookeeper
-      - broker 
+      - broker
       - elasticsearch
       - kibana
 
@@ -167,7 +167,7 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - zookeeper
-      - broker 
+      - broker
       - elasticsearch
       - kibana
 
