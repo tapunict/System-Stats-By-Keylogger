@@ -6,6 +6,8 @@ _Grade: 30 with honors / 30_
 _Antonio Scardace_ @ 
 _Dept of Math and Computer Science, University of Catania_
 
+[![CodeFactor](https://www.codefactor.io/repository/github/antonioscardace/system-stats-by-keylogger/badge/main)](https://www.codefactor.io/repository/github/antonioscardace/system-stats-by-keylogger/overview/main)
+
 ## Introduction
 
 The course aims to study and use useful technologies to build end-to-end solutions to analyze, manage, archive, process, and view a high amount of data in real-time. For instance, we have seen: Docker containers, and pipelines built with Logstash (for data ingestion), Kafka (for data streaming), Spark (for data processing), ElasticSearch (for data storing), and Kibana (for data visualization). 
@@ -18,7 +20,6 @@ This project was created as an exam project, to test and practice the following 
 * Knowledge of Data Storing via Elasticsearch
 * Knowledge of Data Visualization via Kibana
 * Knowledge of Jupyter Notebook (for the presentation)
-* Good coding skills (legible, reliable, documented, etc.) :computer:
 
 ## Real Use Case
 
@@ -33,7 +34,7 @@ It can be useful as:
 
 ### Data Source: Windows Keylogger
 
-The data source is a Windows Keylogger for Italian keyboards only, developed in C++14 using Windows APIs. Sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity.
+The data source is a Windows Keylogger which sends a log to the TCP server on each foreground window change OR after 1 minute of user inactivity.
 
 The log has the following pattern:
 ```
